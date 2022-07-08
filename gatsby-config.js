@@ -69,11 +69,6 @@ module.exports = {
         description:
           'Docker, Amazon Web Services (AWS), CI / CD, Microservices, API design, Agile / Scrum',
       },
-      {
-        name: 'Certifications',
-        description:
-          'Amazon Web Services (AWS): CCP, Solutions Architect Associate',
-      },
     ],
     // Optional: List your certifications, they must have `name` and `description`.
     certifcations: [
