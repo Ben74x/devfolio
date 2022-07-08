@@ -38,8 +38,8 @@ module.exports = {
     // Optional: List your experience, they must have `name` and `description`. `link` is optional.
     experience: [
       {
-        name: 'Acme Corp',
-        description: 'Full-Stack Developer, February 2020 - Present',
+        name: 'Npontu Technologies',
+        description: 'Cloud Support Engineer, September 2020 - August 2021',
         link: 'https://github.com/RyanFitzgerald/devfolio',
       },
       {
@@ -58,7 +58,7 @@ module.exports = {
       {
         name: 'Languages & Frameworks',
         description:
-          'JavaScript (ES6+), Golang, Node.js, Express.js, React, Ruby on Rails, PHP',
+          'Python, Golang',
       },
       {
         name: 'Databases',
