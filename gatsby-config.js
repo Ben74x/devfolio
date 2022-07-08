@@ -9,7 +9,7 @@ module.exports = {
     // Description that goes under your name in main bio
     description: `DevOps Engineer & Cloud Enthusiast.`,
     // Optional: Github account URL
-    github: `https://https://github.com/Ben74x`,
+    github: `https://github.com/Ben74x`,
     // Optional: LinkedIn account URL
     linkedin: `https://www.linkedin.com/in/benjamin-dwumah74/`,
     // Content of the About Me section
