@@ -3,9 +3,9 @@ module.exports = {
     // Site URL for when it goes live
     siteUrl: `https://peaceful-trifle-61538a.netlify.app/`,
     // Your Name
-    name: 'Ryan Fitzgerald',
+    name: 'Benjamin Dwumah',
     // Main Site Title
-    title: `Ryan Fitzgerald | Full-Stack Developer`,
+    title: `Benjamin Dwumah | DevOps Engineer`,
     // Description that goes under your name in main bio
     description: `Lorem ipsum dolor sit amet consectetur adipisicing elit, ipsum.`,
     // Optional: Twitter account handle
