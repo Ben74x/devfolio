@@ -75,6 +75,23 @@ module.exports = {
           'Amazon Web Services (AWS): CCP, Solutions Architect Associate',
       },
     ],
+    // Optional: List your certifications, they must have `name` and `description`.
+    certifcations: [
+      {
+        name: 'Amazon Web Services (AWS)',
+        description:
+          'Certified Cloud Practioner, Solutions Architect (Associate)',
+      },
+      {
+        name: 'Terraform',
+        description: 'Yet to be updated',
+      },
+      {
+        name: 'Kubernetes',
+        description:
+          'Yet to be updated',
+      },
+    ],
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
