@@ -70,23 +70,6 @@ module.exports = {
           'Docker, Amazon Web Services (AWS), CI / CD, Microservices, API design, Agile / Scrum',
       },
     ],
-    // Optional: List your certifications, they must have `name` and `description`.
-    certifcations: [
-      {
-        name: 'Amazon Web Services (AWS)',
-        description:
-          'Certified Cloud Practioner, Solutions Architect (Associate)',
-      },
-      {
-        name: 'Terraform',
-        description: 'Yet to be updated',
-      },
-      {
-        name: 'Kubernetes',
-        description:
-          'Yet to be updated',
-      },
-    ],
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
