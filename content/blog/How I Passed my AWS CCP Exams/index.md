@@ -10,3 +10,7 @@ My preparation for the exam was a little intense because I did not trust myself 
 - City University of London AWS Best Scholar: This award was given to the student who got the highest mark in the practice exams after the two week course.
 
 - City University of London AWS Most Engaged Student: This award was given to the student who contributed a lot in class, completed all the lab exercises first and scored a good mark in the practice exams.
+
+I used extra resources from udemy and AWS Skill Builder to learn and also prepare for the practice exams. They helped a lot and after the two week course, I was very confident in my AWS skills as a beginner. I was able to pass the practice exams with a 96% mark. Although, I was not able to secure the best scholar award because two course mates had 100% in the practice exams, I did secure the most engaged student award because I worked hard to compete in class with my extra knowledge from resources outside. I was the first person to finish all the labs and had a pretty high mark in the practice exams.
+
+
