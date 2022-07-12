@@ -8,4 +8,5 @@ As someone who has been a cloud fanatic since 2020, one of my best highlights la
 
 My preparation for the exam was a little intense because I did not trust myself to go for the exams after taking the course for 2 weeks. In addition to that, there was a two price package for the course which I wanted to win so I really put in the extra work. The price packages were:
 - City University of London AWS Best Scholar: This award was given to the student who got the highest mark in the practice exams after the two week course.
+
 - City University of London AWS Most Engaged Student: This award was given to the student who contributed a lot in class, completed all the lab exercises first and scored a good mark in the practice exams.
