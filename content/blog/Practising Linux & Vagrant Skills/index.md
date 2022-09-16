@@ -1,7 +1,7 @@
 ---
 title: Practising Linux and Vagrant Skills
 date: '2022-07-14T12:00:00.00Z'
-description: 'Setting up a website on virtual box using Vagrant'
+description: 'Setting up a website on a VM using Vagrant'
 ---
 
 ## Lorem ipsum dolor sit amet consectetur adipisicing elit
