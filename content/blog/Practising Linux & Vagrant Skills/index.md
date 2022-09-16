@@ -1,6 +1,6 @@
 ---
-title: My Second Blog Post
-date: '2020-10-02T12:00:00.00Z'
+title: Practising Linux and Vagrant Skills
+date: '2022-07-14T12:00:00.00Z'
 description: 'Ratione dolore sequi in animi obcaecati incidunt reprehenderit illo repellat'
 ---
 
