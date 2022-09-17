@@ -36,7 +36,9 @@ $ echo "deb [signed-by=/usr/share/keyrings/hashicorp-archive-keyring.gpg] https:
 $ sudo apt update && sudo apt install vagrant
 ```
 
-Now that we have our virtualbox and Vagrant installed, we are going to host centos7 on the virtualbox using Vagrant. This can be done manually without Vagrant but as a DevOps Engineer, automation is an ultimate need for DevOps practices so we are going to save ourselves from doing it manually. To setup the VM with Vagrant, we need a Vagrant Box name which can be gotten from 
+
+
+Now that we have our virtualbox and Vagrant installed, we are going to host centos7 on the virtualbox using Vagrant. This can be done manually without Vagrant but as a DevOps Engineer, automation is an ultimate need for DevOps practices so we are going to save ourselves from doing it manually. To setup the VM with Vagrant, we need a Vagrant Box name which can be gotten from <a href="https://app.vagrantup.com/boxes/search">Vagrant's official website</a>. 
 
 
 
