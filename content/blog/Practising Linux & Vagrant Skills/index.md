@@ -53,7 +53,7 @@ $ mkdir centos7
 
 $ cd centos7/
 
-$ vagrant init 
+$ vagrant init geerlingguy/centos7 
 ```
 
 
