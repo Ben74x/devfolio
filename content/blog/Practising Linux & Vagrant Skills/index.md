@@ -56,12 +56,12 @@ $ cd centos7/
 $ vagrant init geerlingguy/centos7 
 ```
 
-The commands above will setup a Vagrantfile in the centos7 directory. All we have to do is run **vagrant up** and centos7 will be setup in the virtualbox. Looks simple right? That is the power of Infrastructure As A Code (IAAC). We are going to do the next part manually to get the understanding of how the website is hosted on centos7. Once everything is done, we will automate the whole process in the next blog. Before we setup the website, we must specify a primary ip address to access it. We will use the private ip *192.168.56.15*. We will then setup a bridge network to make the VM appear as another physical device on our network. Also, we are not going to build the website from scratch. The website template we'll use can be gotten from <a href="https://www.tooplate.com/view/2129-crispy-kitchen">Tooplate</a>. Let's make the configuration changes in the Vagrantfile before starting the VM.
+The commands above will setup a Vagrantfile in the centos7 directory. All we have to do is run **vagrant up** and centos7 will be setup in the virtualbox. Looks simple right? That is the power of Infrastructure As A Code (IAAC). We are going to do the next part manually to get the understanding of how the website is hosted on centos7. Once everything is done, we will automate the whole process in the next blog. Before we setup the website, we must specify a primary ip address to access it. We will use the private ip *192.168.56.14*. We will then setup a bridge network to make the VM appear as another physical device on our network. Also, we are not going to build the website from scratch. The website template we'll use can be gotten from <a href="https://www.tooplate.com/view/2129-crispy-kitchen">Tooplate</a>. Let's make the configuration changes in the Vagrantfile before starting the VM.
 
 
 ### Network Config Changes For VM
 Run `vi Vagrantfile`
-- Change the ip address in Vagrantfile to *192.168.56.15*. Do that by unharshing and changing the ip *config.vm.network "private_network", ip: "192.168.56.14"*
+- Change the ip address in Vagrantfile to *192.168.56.14*. Do that by unharshing and changing the ip *config.vm.network "private_network", ip: "192.168.56.14"*
 - Unharsh *config.vm.network "public_network"*
 
 The changes should look like this
