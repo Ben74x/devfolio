@@ -18,6 +18,9 @@ These features are useful in modern teams. Engineers can define a Vagrantfile th
 
 Okay so I said a simple explanation but I think I ended up going into details :). The project that we are going to do is simply host a website on the VirtualBox using Vagrant. The project is going to be implemented on Ubuntu. Firstly, we need to download VirtualBox and Vagrant and we are going to do that using the bash terminal. 
 
+### Run these commands in Bash terminal to install VirtualBox and Vagrant
+
+
 
 
 
