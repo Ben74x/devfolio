@@ -56,6 +56,8 @@ $ cd centos7/
 $ vagrant init geerlingguy/centos7 
 ```
 
+The commands above will setup a Vagrantfile in the centos7 directory. All we have to do is run **vagrant up** and centos7 will be setup in the virtualbox. Looks simple right? That is the power of Infrastructure As A Code (IAAC). We are going to do the next part manually to get the understanding of how the website is hosted on centos7. Once everything is done, we will automate the whole process in the next blog. Before we setup the website, we must specify a primary ip address to access it. We will use the private ip *192.168.56.15*. Also, we are not going to build the website from scratch. The website template we'll use can be gotten from <a href="https://www.tooplate.com/view/2129-crispy-kitchen">Tooplate</a>
+
 
 
 
