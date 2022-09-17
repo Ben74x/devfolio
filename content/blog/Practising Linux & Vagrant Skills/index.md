@@ -61,8 +61,8 @@ The commands above will setup a Vagrantfile in the centos7 directory. All we hav
 
 ### Network Config Changes For VM
 Run **cat Vagrantfile**
-- Change the ip address in Vagrantfile to *192.168.56.15*. Do that by unharshing and changing the ip *config.vm.network "private_network", ip: "192.168.56.14"
-- Unharsh config.vm.network "public_network"
+- Change the ip address in Vagrantfile to *192.168.56.15*. Do that by unharshing and changing the ip *config.vm.network "private_network", ip: "192.168.56.14"*
+- Unharsh *config.vm.network "public_network"*
 
 The changes should look like this
 <img src=""/>
