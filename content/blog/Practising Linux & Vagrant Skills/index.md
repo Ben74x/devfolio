@@ -65,7 +65,7 @@ Run `vi Vagrantfile`
 - Unharsh *config.vm.network "public_network"*
 
 The changes should look like this
-<img src=""/>
+<img src="https://raw.githubusercontent.com/Ben74x/devfolio/master/content/blog/Practising%20Linux%20%26%20Vagrant%20Skills/Screenshot%20from%202022-09-17%2022-42-20.png"/>
 
 
 
