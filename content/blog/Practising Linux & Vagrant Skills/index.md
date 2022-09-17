@@ -16,6 +16,9 @@ Vagrant is a development environment automation tool built and managed by HashiC
 These features are useful in modern teams. Engineers can define a Vagrantfile that installs all the programming language tools and databases for their work. Then, they can be distribute it amongst them, so that everyone can work in the same environment of their OS. DevOps teams can use Vagrant to spin up multiple VMs running different Linux distributions to test configuration management in different systems. It also makes it easy to create disposable environments to experiment with different technologies. It’s also possible to package up your entire product in a Vagrantfile and give that to your designers or product owners, as a way to experiment with the product. This encapsulation makes Vagrant a useful tool when testing various infrastructure project. Here’s an example. Let’s say that you’re working with a configuration management system like Ansible to install and configure MySQL on different Linux distributions. Vagrant can be used in the test process to spin up VMs for each distribution and run the configuration management.
 
 
+Okay so I said a simple explanation but I think I ended up going into details :). The project that we are going to do is simply host a website on the VirtualBox using Vagrant. The project is going to be implemented on Ubuntu. Firstly, we need to download VirtualBox and Vagrant and we are going to do that using the bash terminal. 
+
+
 
 
  
