@@ -40,6 +40,22 @@ $ sudo apt update && sudo apt install vagrant
 
 Now that we have our virtualbox and Vagrant installed, we are going to host centos7 on the virtualbox using Vagrant. This can be done manually without Vagrant but as a DevOps Engineer, automation is an ultimate need for DevOps practices so we are going to save ourselves from doing it manually. To setup the VM with Vagrant, we need a Vagrant Box name which can be gotten from <a href="https://app.vagrantup.com/boxes/search">Vagrant's official website</a>. We also need a project directory where the project will be based, a Vagrantfile which is the <a href="https://app.vagrantup.com/geerlingguy/boxes/centos7">centos7 linux distribution</a>  and Vagrant commands to setup the VM. 
 
+### Setup VM with Vagrant
+Create project directory in home and execute Vagrant commands
+```js
+$ cd /home/
+
+$ mkdir vagrant-vms
+
+$ cd vagrant-vms/
+
+$ mkdir centos7
+
+$ cd centos7/
+
+$ vagrant init 
+```
+
 
 
 
