@@ -104,7 +104,4 @@ Okay! So that should do it. Once you run the last command, copy the static ip *1
 <img src="https://raw.githubusercontent.com/Ben74x/devfolio/master/content/blog/Practising%20Linux%20%26%20Vagrant%20Skills/Screenshot%20from%202022-09-18%2017-32-56.png"/>
 
 
-
-
-
- 
+<img src="https://raw.githubusercontent.com/Ben74x/devfolio/master/content/blog/Practising%20Linux%20%26%20Vagrant%20Skills/Screenshot%20from%202022-09-18%2017-33-04.png"/>
