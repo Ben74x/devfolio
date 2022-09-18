@@ -97,6 +97,12 @@ $ systemctl restart httpd
 ```
 
 
+Okay! So that should do it. Once you run the last command, copy the static ip *192.168.56.14* and check it in your browser. You should see the website running on the browser. In summary, we have hosted a website on a Linux distribution (centos7) in a virtual machine. We set up the packages and dependencies, started and enabled the httpd service, and deployed an artifact which is this template. Feel free to setup any other website if you like instead of what I've done. If you want something else, you can go through the website templates on <a href="https://www.tooplate.com/">Tooplate</a> and try that. You can also try it on your personal website. In the next blog, we will automate the whole setup by using Infrastructure as a code which is Vagrant Provisioning. We will write a Vagrantfile with the whole setup in it and once we launch the VM, it'll automatically launch the setup. 
+
+Cheers!
+
+
+
 
 
  
