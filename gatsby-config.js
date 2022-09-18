@@ -13,7 +13,7 @@ module.exports = {
     // Optional: LinkedIn account URL
     linkedin: `https://www.linkedin.com/in/benjamin-dwumah74/`,
     // Content of the About Me section
-    about: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus perferendis porro cumque ea error ab voluptatem. Temporibus adipisci exercitationem similique itaque quibusdam laudantium, qui molestiae quas, aut amet animi id.`,
+    about: `I'm a motivated DevOps Engineer with experience in automation, architecting and optimizing mission critical deployments over various infrastructure. I'm also passionate about A.I and I share my progress and thoughts on my github and blog. I love to chat about Python, DevOps practices, Machine Learning and Anime. You can reach out to me on my LinkedIn`,
     // Optional: List your projects, they must have `name` and `description`. `link` is optional.
     projects: [
       {
