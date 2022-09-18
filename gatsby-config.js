@@ -40,12 +40,10 @@ module.exports = {
       {
         name: 'Npontu Technologies',
         description: 'Cloud Support Engineer, September 2020 - August 2021',
-        link: 'https://github.com/RyanFitzgerald/devfolio',
       },
       {
-        name: 'Globex Corp',
-        description: 'Full-Stack Developer, December 2017 - February 2020',
-        link: 'https://github.com/RyanFitzgerald/devfolio',
+        name: 'theSOFTtribe Ltd',
+        description: 'Web Developer Intern, June 2017 - August 2017',
       },
       {
         name: 'Hooli',
