@@ -74,7 +74,7 @@ The changes should look like this
 
 ### Host Website
 As I mentioned earlier, the website template is gotten from Tooplate. It is a place where various templates of websites can be found and downloaded for free. We are going to use a website for a restaurant called Crispy Kitchen. The link to the website can be found above. We are going download the website template using `wget` command to the server data directory and run httpd service on the centos7 VM to host the website on it. Let's see the commands on how to host the website.
-```js
+```bash
 $ sudo -i
 
 $ yum install httpd wget unzip -y
