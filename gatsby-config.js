@@ -39,15 +39,18 @@ module.exports = {
     experience: [
       {
         name: 'AWS Academy Training',
-        description: 'Cloud Architect Trainee, June 2022 - Ongoing',
+        description: 'Cloud Architect Trainee, June 2022 - Present',
+        link: 'https://github.com/RyanFitzgerald/devfolio',
       },
       {
         name: 'Npontu Technologies',
         description: 'Cloud Support Engineer, September 2020 - August 2021',
+        link: 'https://github.com/RyanFitzgerald/devfolio',
       },
       {
         name: 'theSOFTtribe Ltd',
-        description: 'Web Developer Intern, June 2017 - August 2017',
+        description: 'Web Developer Intern, May 2015 - December 2017',
+        link: 'https://github.com/RyanFitzgerald/devfolio',
       },
     ],
     // Optional: List your skills, they must have `name` and `description`.
