@@ -12,6 +12,11 @@ Now since we already have a Vagrantfile in `/home/vagrant-vms/centos7/` director
 
 ### Vagrantfile Setup
 ```js
+$ cd /vagrant-vms/
 
+$ mkdir Iac
 
+$ cd IaC/
+
+$ vagrant init geerlingguy/centos7
 ```
