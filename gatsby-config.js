@@ -58,16 +58,16 @@ module.exports = {
       {
         name: 'Languages & Frameworks',
         description:
-          'Python, Golang',
+          'Python, Flask, Django',
       },
       {
-        name: 'Databases',
-        description: 'MongoDB, PostreSQL, MySQL',
+        name: 'DevOps Tools',
+        description: 'Git, Maven, Jenkins, Ansible, Chef, Puppet, Docker, Terraform, Kubernetes',
       },
       {
         name: 'Other',
         description:
-          'Docker, Amazon Web Services (AWS), CI / CD, Microservices, API design, Agile / Scrum',
+          'Amazon Web Services (AWS), Microservices, API design',
       },
     ],
   },
