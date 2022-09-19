@@ -101,3 +101,7 @@ Vagrant.configure("2") do |config|
    SHELL
 end
 ```
+
+
+
+Okay so let's explain what we did in the config. Just like the previous blog, we specified the private ip *192.168.56.17* to access the website. We then set up a bridge network to make the VM appear as another physical device on our network. After that, we put all the commands in the config.vm.provision shell to allow the VM to run it at start time. You can use your own website or you can download a different one on  This sums up the configuration changes. Further changes can be done also if you want to. An example is the amount of memory on the VM. You can unharsh that line to use 1GB of memory. By default, the VM uses 512. 
