@@ -23,7 +23,7 @@ $ vagrant init geerlingguy/centos7
 
 ### Config Changes
 Run `vi Vagrantfile` and change the configurations to this
-```js
+```
 # -*- mode: ruby -*-
 # vi: set ft=ruby :
 
