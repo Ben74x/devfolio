@@ -20,7 +20,7 @@ module.exports = {
         name: 'Devfolio',
         description:
           'A zero-config and blazing fast personal site + blog built with GatsbyJs and TailwindCSS',
-        link: 'https://github.com/RyanFitzgerald/devfolio',
+        link: '',
       },
       {
         name: 'ChromeExtensionKit',
@@ -32,7 +32,7 @@ module.exports = {
         name: 'Another Cool Project',
         description:
           'Lorem ipsum dolor sit amet consectetur adipisicing elit ducimus perferendis',
-        link: 'https://github.com/RyanFitzgerald/devfolio',
+        link: '',
       },
     ],
     // Optional: List your experience, they must have `name` and `description`. `link` is optional.
