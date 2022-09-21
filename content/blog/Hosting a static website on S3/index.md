@@ -18,3 +18,14 @@ Static websites have fixed content with no backend processing. They can contain 
 
 Let's get to work!!
 
+
+### Creating a bucket in Amazon S3
+
+1. In the **AWS Management Console**, on the `Services menu`, choose **S3**.
+2. Choose `Create bucket`. 
+3. Enter a **bucket name**. An S3 bucket name is globally unique, and the namespace is shared by all AWS accounts. After you create a bucket, the name of that bucket cannot be used by another AWS account in any AWS Region unless you delete the bucket. 
+4. Select the **AWS region** in which the S3 bucket will be created. Try to select a region near the public that will access the website.
+5. In the **Object Ownership section**, select **ACLs disabled**, then verify **Bucket owner enforced** is selected.
+6. Clear **Block all public access**, then select the box that states **I acknowledge that the current settings may result in this bucket and the objects within becoming public.**
+7. Choose `Create bucket`.
+
