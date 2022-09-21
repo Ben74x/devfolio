@@ -21,7 +21,7 @@ Let's get to work!!
 
 ### Creating a bucket in Amazon S3
 
-1. In the **AWS Management Console**, on the `Services menu`, search for **S3** and choose it. ![image](https://user-images.githubusercontent.com/37503046/191600610-36202a4f-2d7f-4d98-a4e0-bb20f627ed74.png) '\n'
+1. In the **AWS Management Console**, on the `Services menu`, search for **S3** and choose it. ![image](https://user-images.githubusercontent.com/37503046/191600610-36202a4f-2d7f-4d98-a4e0-bb20f627ed74.png) <br/> <br/> <br/>
 
 3. Choose `Create bucket`. ![image](https://user-images.githubusercontent.com/37503046/191602096-ed14f6c6-2f6f-44f2-8b26-8bd094282a4a.png)
  
