@@ -48,7 +48,17 @@ Note that you must enter this value, even though it is already displayed. <br/>
 
 
 ### Upload website content to the bucket
-We will upload the files that will serve as your static website to the bucket. The files can be found in this github repo
+We will upload the files that will serve as your static website to the bucket. The files can be found in this <a href="https://github.com/Ben74x/s3-static">github repo</a>. Download the files and follow the steps below to serve it to the bucket. <br/> <br/>
+
+15. Return to the Amazon S3 console and in the website bucket you created earlier, choose the Objects tab. <br/> <br/>
+16. Choose `Upload` ![image](https://user-images.githubusercontent.com/37503046/191996201-305778f3-f661-42d2-a99b-c4d9242b4edd.png) <br/> <br/> <br/>
+17. Choose `Add files`. <br/> <br/>
+18. Locate and select the 3 files that you downloaded. <br/> <br/>
+19. If prompted, choose I acknowledge that existing objects with the same name will be overwritten. <br/> <br/>
+20. Choose `Upload` ![image](https://user-images.githubusercontent.com/37503046/191996981-fe3f4b2f-30ec-4dea-b36d-3186fcdf8761.png) <br/> <br/> <br/>
+21. Once the files have been uploaded, choose `Close`
+
+
 
 
 
