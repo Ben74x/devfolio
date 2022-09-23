@@ -39,6 +39,10 @@ Let's get to work!!
 Note that you must enter this value, even though it is already displayed. <br/>
 **Error document**: error.html <br/> <br/>
 13. Choose `Save Changes` ![image](https://user-images.githubusercontent.com/37503046/191988635-94b77621-c97e-4ff8-bffe-ae21f6b8217b.png)<br/> <br/> <br/>
+14. In the Static website hosting panel, choose the link under Bucket website endpoint. You will receive a 403 Forbidden message because the bucket permissions have not been configured yet. Keep this tab open in your web browser so that you can return to it later. ![image](https://user-images.githubusercontent.com/37503046/191990443-8be991cf-d109-4ef3-9e4b-1847ea109568.png) <br/> <br/> <br/>
+
+
+**Your bucket has now been configured to host a static website.** <br/> <br/> <br/>
 
 
 
