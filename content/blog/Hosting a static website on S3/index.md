@@ -56,10 +56,20 @@ We will upload the files that will serve as your static website to the bucket. T
 18. Locate and select the 3 files that you downloaded. <br/> <br/>
 19. If prompted, choose I acknowledge that existing objects with the same name will be overwritten. <br/> <br/>
 20. Choose `Upload` ![image](https://user-images.githubusercontent.com/37503046/191996981-fe3f4b2f-30ec-4dea-b36d-3186fcdf8761.png) <br/> <br/> <br/>
-21. Once the files have been uploaded, choose `Close` ![image](https://user-images.githubusercontent.com/37503046/191997476-46757a82-21cd-48cc-8a36-7ea9b01fc8bf.png)
+21. Once the files have been uploaded, choose `Close` ![image](https://user-images.githubusercontent.com/37503046/191997476-46757a82-21cd-48cc-8a36-7ea9b01fc8bf.png) <br/> <br/> <br/>
 
 
 
+### Enabling access to the objects
+Objects that are stored in Amazon S3 are private by default. This ensures that your organization's data remains secure. We will make the uploaded objects publicly accessible. We confirmed that the website is not accesible from the 403 Forbidden message we received when we accessed the link. This response is expected! This message indicates that the static website is being hosted by Amazon S3, but that the content is private. You can make Amazon S3 objects public through two different ways:
+- To make either a whole bucket public, or a specific directory in a bucket public, use a bucket policy.
+- To make individual objects in a bucket public, use an access control list (ACL).
+
+It is normally safer to make individual objects public because this avoids accidentally making other objects public. However, if you know that the entire bucket contains no sensitive information, you can use a bucket policy.
+
+We will now configure the individual objects to be publicly accessible.
+
+ 
 
 
 
