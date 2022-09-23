@@ -56,7 +56,8 @@ We will upload the files that will serve as your static website to the bucket. T
 18. Locate and select the 3 files that you downloaded. <br/> <br/>
 19. If prompted, choose I acknowledge that existing objects with the same name will be overwritten. <br/> <br/>
 20. Choose `Upload` ![image](https://user-images.githubusercontent.com/37503046/191996981-fe3f4b2f-30ec-4dea-b36d-3186fcdf8761.png) <br/> <br/> <br/>
-21. Once the files have been uploaded, choose `Close`
+21. Once the files have been uploaded, choose `Close` ![image](https://user-images.githubusercontent.com/37503046/191997476-46757a82-21cd-48cc-8a36-7ea9b01fc8bf.png)
+
 
 
 
