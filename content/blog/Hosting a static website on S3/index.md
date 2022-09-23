@@ -33,11 +33,11 @@ Let's get to work!!
 10. Scroll to the Static website hosting panel. <br/> <br/>
 11. Choose `Edit`. ![image](https://user-images.githubusercontent.com/37503046/191981554-4f1fb8ad-7288-4ebe-82aa-dccaee3e7a7f.png) <br/> <br/> <br/>
 12. Configure the following settings: <br/>
-   - **Static web hosting**: Enable
-   - **Hosting type**: Host a static website
-   - **Index document**: index.html
-   - **Note**: You must enter this value, even though it is already displayed.
-   - **Error document**: error.html
+**Static web hosting**: Enable <br/>
+**Hosting type**: Host a static website <br/>
+**Index document**: index.html <br/>
+**Note**: You must enter this value, even though it is already displayed. <br/>
+**Error document**: error.html
 
 
 
