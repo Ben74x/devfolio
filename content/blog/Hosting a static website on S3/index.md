@@ -65,11 +65,16 @@ Objects that are stored in Amazon S3 are private by default. This ensures that y
 - To make either a whole bucket public, or a specific directory in a bucket public, use a bucket policy.
 - To make individual objects in a bucket public, use an access control list (ACL).
 
-It is normally safer to make individual objects public because this avoids accidentally making other objects public. However, if you know that the entire bucket contains no sensitive information, you can use a bucket policy.
-
-We will now configure the individual objects to be publicly accessible.
+It is normally safer to make individual objects public because this avoids accidentally making other objects public. However, if you know that the entire bucket contains no sensitive information, you can use a bucket policy. We will now configure the individual objects to be publicly accessible.
 
  
+22. Return to the Amazon S3 console and in the website bucket, choose the Objects tab. <br/> <br/>
+23. Select all three objects. <br/> <br/>
+24. In the Actions menu, choose Make public via ACL. ![image](https://user-images.githubusercontent.com/37503046/192004415-28da5dfb-13c2-4f5b-90e0-4593c4d12a8c.png) <br/> <br/> <br/>
+25. Choose `Make public`. <br/> <br/> <br/>
+
+The static website is now publicly accessible. Return to the web browser tab that has the 403 Forbidden message and refresh the webpage. You should now see the static website that is being hosted by Amazon S3. Because it is hosted on Amazon S3, the website has high availability and can serve high volumes of traffic without using any servers. You can also use your own domain name to direct users to a static website that is hosted on Amazon S3. To accomplish this, you could use the Amazon Route 53 Domain Name System (DNS) service in combination with Amazon S3. Creating, managing, and hosting websites and webpages and sharing data publicly is very important and crucial as this provides the public face of most brands and organizations. Looking at this perspective, AWS has developed a great idea to publicly provide an easy and simple solution for their users to host content using the S3 bucket. This guide describes simple steps to host your static website using the AWS S3 bucket. I hope you found this article helpful.
 
 
+**Cheers!**
 
