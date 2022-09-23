@@ -27,6 +27,14 @@ Let's get to work!!
 4. Select the **AWS region** in which the S3 bucket will be created. Try to select a region near the public that will access the website. <br/> <br/>
 5. In the **Object Ownership section**, select **ACLs disabled**, then verify **Bucket owner enforced** is selected. ![image](https://user-images.githubusercontent.com/37503046/191602321-3d1285b5-bc5e-4bb3-8e1a-1dedadc2c7e7.png) <br/> <br/> <br/>
 6. Clear **Block all public access**, then select the box that states **I acknowledge that the current settings may result in this bucket and the objects within becoming public.** ![image](https://user-images.githubusercontent.com/37503046/191602531-a9c76751-8e49-48b9-9678-d6f4ea22b247.png) <br/> <br/> <br/>
-7. Choose `Create bucket`. ![image](https://user-images.githubusercontent.com/37503046/191602666-edbc6535-304f-460d-af67-3af706648682.png) 
+7. Choose `Create bucket`. ![image](https://user-images.githubusercontent.com/37503046/191602666-edbc6535-304f-460d-af67-3af706648682.png) <br/> <br/> <br/>
+8. Choose the name of your new bucket. ![image](https://user-images.githubusercontent.com/37503046/191980151-64d75e40-be68-4808-857e-83cd677d933a.png) <br/> <br/> <br/>
+9. Choose the  Properties tab. <br/> <br/>
+10. Scroll to the Static website hosting panel. <br/> <br/>
+11. Choose `Edit`. ![image](https://user-images.githubusercontent.com/37503046/191981554-4f1fb8ad-7288-4ebe-82aa-dccaee3e7a7f.png) <br/> <br/> <br/>
+
+
+
+### Upload website content to the bucket
 
 
