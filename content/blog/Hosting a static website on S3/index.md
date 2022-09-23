@@ -35,9 +35,11 @@ Let's get to work!!
 12. Configure the following settings: <br/>
 **Static web hosting**: Enable <br/>
 **Hosting type**: Host a static website <br/>
-**Index document**: index.html <br/>
-**Note**: You must enter this value, even though it is already displayed. <br/>
-**Error document**: error.html
+**Index document**: index.html. <br/>
+Note that you must enter this value, even though it is already displayed. <br/>
+**Error document**: error.html <br/>
+13. Choose `Save Changes` ![image](https://user-images.githubusercontent.com/37503046/191988635-94b77621-c97e-4ff8-bffe-ae21f6b8217b.png)<br/> <br/> <br/>
+
 
 
 
