@@ -48,5 +48,7 @@ Note that you must enter this value, even though it is already displayed. <br/>
 
 
 ### Upload website content to the bucket
+We will upload the files that will serve as your static website to the bucket. The files can be found in this github repo
+
 
 
