@@ -49,7 +49,7 @@ module.exports = {
       },
       {
         name: 'theSOFTtribe Ltd',
-        description: 'Web Developer Intern, May 2015 - December 2017',
+        description: 'Web Developer Intern, June 2017 - August 2017',
         link: '',
       },
     ],
