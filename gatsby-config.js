@@ -29,10 +29,10 @@ module.exports = {
         link: 'https://chromeextensionkit.com/?ref=devfolio',
       },
       {
-        name: 'Another Cool Project',
+        name: 'Image Captioning App',
         description:
-          'Lorem ipsum dolor sit amet consectetur adipisicing elit ducimus perferendis',
-        link: '',
+          'An image caption generator built using deep learning to describe images',
+        link: 'https://github.com/Ben74x/Image-Captioning-on-MSCoco-Dataset',
       },
     ],
     // Optional: List your experience, they must have `name` and `description`. `link` is optional.
