@@ -24,3 +24,18 @@ Rekognition Image is an image recognition service that detects objects, scenes, 
 Rekognition Image uses deep neural network models to detect and label thousands of objects and scenes in your images, and we are continually adding new labels and facial recognition features to the service. With Rekognition Image, you only pay for the images you analyze and the face metadata you store.
 
 Rekognition Video is a video recognition service that detects activities; understands the movement of people in frame; and recognizes objects, celebrities, and inappropriate content in videos stored in Amazon S3 and live video streams from Acuity. Rekognition Video detects persons and tracks them through the video even when their faces are not visible, or as the whole person might go in and out of the scene. For example, this could be used in an application that sends a real-time notification when someone delivers a package to your door. Rekognition Video allows you also to index metadata like objects, activities, scene, celebrities, and faces that make video search easy.
+
+In this project, the aim is to build out an AWS Lex Chatbot and Amazon Rekognition Website and at the end of the project, you will be able to:
+
+- Create a chatbot using AWS Lex
+- Understand intents, slots and utterances
+- Be able to add buttons to the chatbot responses
+- Customise the responses that chatbots have using AWS Lambda
+- Deploy the chatbot as a website using Amazon CloudFormation
+- Use Amazon Rekognition to identify objects
+- Create a website using HTML, CSS and Javascript
+- Integrate Lex into a basic website
+- Host a public website using Amazon S3 and Amazon CloudFront
+
+
+Let's get started!!
