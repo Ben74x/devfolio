@@ -110,6 +110,9 @@ Size – With values Small , Medium and Large.
 Crust – With values Thick and Thin.
 
 Amazon Lex also provides built-in slot types. For example, AMAZON.NUMBER is a built-in slot type that you can use for the number of pizzas ordered. </br></br>
-8. Name the slot type as FlavourType and add the values strawberry, watermelon and lemon. Click `Add slot to intent`. This can be seen in the images below.
+8. Name the slot type as FlavourType and add the values strawberry, watermelon and lemon. Click `Add slot to intent`. This can be seen in the images below. <img src="https://raw.githubusercontent.com/Ben74x/devfolio/master/content/blog/Image%20Recognition%20and%20Chatbot%20Website%20Using%20AWS/Screenshot%20from%202022-10-11%2022-23-57.png" alt=""> </br></br>
+9. Click on create slot type again and this time have the slot type name of SizeType with values of small, medium and large. Click Add slot to intent. </br>
+10. Create the last slot type which is DrinkType and add the values ice tea, energy drink and flavoured water. Click Add slot to intent. </br>
+11. Within the slots section, change the name and prompt for the corresponding slots. Repeat this for flavour, size and drink slot types. Mark all slots as required and fill in the slots as shown in the image below.
 
 
