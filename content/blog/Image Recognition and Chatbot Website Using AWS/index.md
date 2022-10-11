@@ -59,16 +59,20 @@ Let's get started!!
 3. Select `Custom Bot` and fill in the page with the below information.
 <table>
   <tr>
-    <th>**Field**</th>
-    <th>**Value**</th>
+    <th>Field</th>
+    <th>Value</th>
   </tr>
   <tr>
-    <td>Alfreds Futterkiste</td>
-    <td>Maria Anders</td>
-    <td>Germany</td>
+    <td>Custom Name</td>
+    <td>Language</td>
+    <td>Output Voice</td>
+    <td>Session Timeout</td>
+    <td>Sentinent Analysis</td>
+    <td>IAM Role</td>
+    <td>COPPA</td>
   </tr>
   <tr>
-    <td>Centro comercial Moctezuma</td>
+    <td>**CanteenBot**</td>
     <td>Francisco Chang</td>
     <td>Mexico</td>
   </tr>
