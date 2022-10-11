@@ -64,20 +64,30 @@ Let's get started!!
   </tr>
   <tr>
     <td>Custom Name</td>
-    <td>Language</td>
-    <td>Output Voice</td>
-    <td>Session Timeout</td>
-    <td>Sentinent Analysis</td>
-    <td>IAM Role</td>
-    <td>COPPA</td>
+    <td>CanteenBot</td>
   </tr>
   <tr>
-    <td>CanteenBot</td>
+    <td>Language</td>
     <td>English(UK)</td>
+  </tr>
+  <tr>
+    <td>Output Voice</td>
     <td>Amy</td>
+  </tr>
+  <tr>
+    <td>Session Timeout</td>
     <td>5</td>
+  </tr>
+  <tr>
+    <td>Sentiment Analysis</td>
     <td>No</td>
+  </tr>
+  <tr>
+    <td>IAM Role</td>
     <td>Leave as is</td>
-    <td>Yes</td>
+  </tr>
+  <tr>
+    <td>COPPA</td>
+    <td>Leave as is</td>
   </tr>
 </table>
