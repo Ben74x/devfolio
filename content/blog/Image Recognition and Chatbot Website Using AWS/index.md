@@ -76,11 +76,11 @@ Let's get started!!
   </tr>
   <tr>
     <td>Session Timeout</td>
-    <td>5</td>
+    <td>    5</td>
   </tr>
   <tr>
     <td>Sentiment Analysis</td>
-    <td>    No</td>
+    <td>        No</td>
   </tr>
   <tr>
     <td>IAM Role</td>
@@ -90,7 +90,8 @@ Let's get started!!
     <td>COPPA</td>
     <td>Yes</td>
   </tr>
-</table>
+</table>  
+</br></br></br>
 
 4. Click `Create` </br></br>
 5. You should see the below image and start creating the chatbot by clicking Create Intent and also clicking Create Intent in the popup window. An intent represents an action that users want to perform. You create a bot to support one or more related intents. For example, you might create a bot that orders pizza and drinks. This would mean you’ll create an OrderFood intent and an OrderDrink intent as these are two separate actions.
