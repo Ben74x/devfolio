@@ -99,5 +99,5 @@ Let's get started!!
 <img src="https://raw.githubusercontent.com/Ben74x/devfolio/master/content/blog/Image%20Recognition%20and%20Chatbot%20Website%20Using%20AWS/Screenshot%20from%202022-10-11%2021-58-23.png" alt=""> </br></br>
 6. Name your intent “OrderDrink” and click `Add`. You should see the below images as a result. </br></br>
 7. Create the slot types that can be used in you sample utterances later on. Click on the plus sign next to slot types on the left hand side and click on `create slot type`. 
-<img src="" alt=""> </br>
-<img src="" alt=""> </br></br>
+<img src="https://raw.githubusercontent.com/Ben74x/devfolio/master/content/blog/Image%20Recognition%20and%20Chatbot%20Website%20Using%20AWS/Screenshot%20from%202022-10-11%2022-06-16.png" alt=""> </br>
+<img src="https://raw.githubusercontent.com/Ben74x/devfolio/master/content/blog/Image%20Recognition%20and%20Chatbot%20Website%20Using%20AWS/Screenshot%20from%202022-10-11%2022-06-16.png" alt=""> </br></br>
