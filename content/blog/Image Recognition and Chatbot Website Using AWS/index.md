@@ -101,3 +101,15 @@ Let's get started!!
 7. Create the slot types that can be used in you sample utterances later on. Click on the plus sign next to slot types on the left hand side and click on `create slot type`. 
 <img src="https://raw.githubusercontent.com/Ben74x/devfolio/master/content/blog/Image%20Recognition%20and%20Chatbot%20Website%20Using%20AWS/Screenshot%20from%202022-10-11%2022-06-16.png" alt=""> </br>
 <img src="https://raw.githubusercontent.com/Ben74x/devfolio/master/content/blog/Image%20Recognition%20and%20Chatbot%20Website%20Using%20AWS/Screenshot%20from%202022-10-11%2022-06-16.png" alt=""> </br></br>
+
+**What are slot types**
+Each slot has a type. You can create your custom slot types or use built-in slot types. For example, you might create and use the following slot types for the intent:
+
+Size – With values Small , Medium and Large.
+
+Crust – With values Thick and Thin.
+
+Amazon Lex also provides built-in slot types. For example, AMAZON.NUMBER is a built-in slot type that you can use for the number of pizzas ordered. </br></br>
+8. Name the slot type as FlavourType and add the values strawberry, watermelon and lemon. Click `Add slot to intent`. This can be seen in the images below.
+
+
