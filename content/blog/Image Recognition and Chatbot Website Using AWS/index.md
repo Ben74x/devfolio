@@ -54,5 +54,5 @@ In this project, the aim is to build out an AWS Lex Chatbot and Amazon Rekogniti
 
 Let's get started!!
 
-1. Once you have logged into the AWS Console, search for Amazon Lex in the search bar like the picture below. file:///home/bdwumah74/Pictures/Screenshots/Screenshot%20from%202022-10-11%2021-03-18.png </br></br></br>
+1. Once you have logged into the AWS Console, search for Amazon Lex in the search bar like the picture below. </br></br></br>
 2. Click on the Amazon Lex console to see the below page and click on the Get Started button. Note that I am using the V1 console for the Amazon Lex service. If your version is V2 you can switch to the V1 console. file:///home/bdwumah74/Pictures/Screenshots/Screenshot%20from%202022-10-11%2021-07-09.png </br></br></br>
