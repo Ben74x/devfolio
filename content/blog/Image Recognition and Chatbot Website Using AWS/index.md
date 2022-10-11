@@ -102,7 +102,7 @@ Let's get started!!
 <img src="https://raw.githubusercontent.com/Ben74x/devfolio/master/content/blog/Image%20Recognition%20and%20Chatbot%20Website%20Using%20AWS/Screenshot%20from%202022-10-11%2022-06-08.png" alt=""> </br>
 <img src="https://raw.githubusercontent.com/Ben74x/devfolio/master/content/blog/Image%20Recognition%20and%20Chatbot%20Website%20Using%20AWS/Screenshot%20from%202022-10-11%2022-06-16.png" alt=""> </br></br>
 
-**What are slot types**
+**What are slot types?**
 Each slot has a type. You can create your custom slot types or use built-in slot types. For example, you might create and use the following slot types for the intent:
 
 Size – With values Small , Medium and Large.
@@ -115,7 +115,7 @@ Amazon Lex also provides built-in slot types. For example, AMAZON.NUMBER is a bu
 10. Create the last slot type which is DrinkType and add the values ice tea, energy drink and flavoured water. Click `Add slot to intent`. </br></br>
 11. Within the slots section, change the name and prompt for the corresponding slots. Repeat this for flavour, size and drink slot types. Mark all slots as required and fill in the slots as shown in the image below. <img src="https://raw.githubusercontent.com/Ben74x/devfolio/master/content/blog/Image%20Recognition%20and%20Chatbot%20Website%20Using%20AWS/Screenshot%20from%202022-10-11%2022-37-13.png" alt=""> </br></br></br>
 
-**What are slots**
+**What are slots?**
 These are elements within your utterances that may change based on the user wanting different variations to their actions.
 
 E.g. “I want to order a pepperoni pizza” versus “I want to order a vegetarian pizza.”
@@ -129,7 +129,7 @@ When the chatbot starts running, Amazon Lex prompts the user for specific slot v
 `2. Can I have a {size} {drink}`
 `3. I want a {drink}` </br></br>
 
-**What are utterances**
+**What are utterances?**
 What a user might say to trigger this intent. For example, a user might say "Can I order a pizza please" or "I want to order a pizza".
 
 Note
