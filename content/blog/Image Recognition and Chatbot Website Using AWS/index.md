@@ -113,6 +113,36 @@ Amazon Lex also provides built-in slot types. For example, AMAZON.NUMBER is a bu
 8. Name the slot type as FlavourType and add the values strawberry, watermelon and lemon. Click `Add slot to intent`. This can be seen in the images below. <img src="https://raw.githubusercontent.com/Ben74x/devfolio/master/content/blog/Image%20Recognition%20and%20Chatbot%20Website%20Using%20AWS/Screenshot%20from%202022-10-11%2022-23-57.png" alt=""> </br></br>
 9. Click on create slot type again and this time have the slot type name of SizeType with values of small, medium and large. Click `Add slot to intent`. </br></br>
 10. Create the last slot type which is DrinkType and add the values ice tea, energy drink and flavoured water. Click `Add slot to intent`. </br></br>
-11. Within the slots section, change the name and prompt for the corresponding slots. Repeat this for flavour, size and drink slot types. Mark all slots as required and fill in the slots as shown in the image below.
+11. Within the slots section, change the name and prompt for the corresponding slots. Repeat this for flavour, size and drink slot types. Mark all slots as required and fill in the slots as shown in the image below. <img src="https://raw.githubusercontent.com/Ben74x/devfolio/master/content/blog/Image%20Recognition%20and%20Chatbot%20Website%20Using%20AWS/Screenshot%20from%202022-10-11%2022-37-13.png" alt=""> </br></br></br>
+
+**What are slots**
+These are elements within your utterances that may change based on the user wanting different variations to their actions.
+
+E.g. “I want to order a pepperoni pizza” versus “I want to order a vegetarian pizza.”
+
+In this example, pepperoni and vegetarian can be classified as a slot called "flavour". This means the sample utterance can be fulfilled with "I want to order a {flavour} pizza" instead.
+
+When the chatbot starts running, Amazon Lex prompts the user for specific slot values. The user must provide values for all required slots before Amazon Lex can fulfill the intent. </br></br>
+
+12. Input the sample utterances by copying and pasting the below text in the sample utterances text box and pressing Enter. You can input other utterances that you think a user would say when they order drinks from the canteen.
+`1. I would like a {size} {flavour} {drink} please`
+`2. Can I have a {size} {drink}`
+`3. I want a {drink}` </br></br>
+
+**What are utterances**
+What a user might say to trigger this intent. For example, a user might say "Can I order a pizza please" or "I want to order a pizza".
+
+Note
+Make sure to leave a space before and after the slot values.
+
+- Incorrect Declaration due to no spaces between the slots - {size}{drink}{flavour}
+
+- Correct Declaration - {size} {drink} {flavour}
+
+
+
+
+
+
 
 
