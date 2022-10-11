@@ -125,8 +125,11 @@ In this example, pepperoni and vegetarian can be classified as a slot called "fl
 When the chatbot starts running, Amazon Lex prompts the user for specific slot values. The user must provide values for all required slots before Amazon Lex can fulfill the intent. </br></br>
 
 12. Input the sample utterances by copying and pasting the below text in the sample utterances text box and pressing Enter. You can input other utterances that you think a user would say when they order drinks from the canteen.
+
 `1. I would like a {size} {flavour} {drink} please`
+
 `2. Can I have a {size} {drink}`
+
 `3. I want a {drink}` </br></br>
 
 **What are utterances?**
