@@ -95,3 +95,5 @@ Let's get started!!
 
 4. Click `Create` </br></br>
 5. You should see the below image and start creating the chatbot by clicking Create Intent and also clicking Create Intent in the popup window. An intent represents an action that users want to perform. You create a bot to support one or more related intents. For example, you might create a bot that orders pizza and drinks. This would mean you’ll create an OrderFood intent and an OrderDrink intent as these are two separate actions.
+<img src="https://raw.githubusercontent.com/Ben74x/devfolio/master/content/blog/Image%20Recognition%20and%20Chatbot%20Website%20Using%20AWS/Screenshot%20from%202022-10-11%2021-53-20.png" alt=""> </br>
+<img src="https://raw.githubusercontent.com/Ben74x/devfolio/master/content/blog/Image%20Recognition%20and%20Chatbot%20Website%20Using%20AWS/Screenshot%20from%202022-10-11%2021-58-23.png" alt="">
