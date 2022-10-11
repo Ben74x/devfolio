@@ -54,6 +54,10 @@ In this project, the aim is to build out an AWS Lex Chatbot and Amazon Rekogniti
 
 Let's get started!!
 
+## Building the chatbot
+For this project you need to be able to access Amazon Cloudfront, Cloudformation, Cognito, Lambda, Lex, S3 and Rekogntion. I recommend having a code editor such as Visual Studio Code , to complete Amazon Rekogntion website integration and Amazon Lex website integration
+
+
 1. Once you have logged into the AWS Console, search for Amazon Lex in the search bar like the picture below. <img src="https://raw.githubusercontent.com/Ben74x/devfolio/master/content/blog/Image%20Recognition%20and%20Chatbot%20Website%20Using%20AWS/Screenshot%20from%202022-10-11%2021-03-18.png" alt=""> </br></br></br>
 2. Click on the Amazon Lex console to see the below page and click on the `Get Started` button. Note that I am using the V1 console for the Amazon Lex service. If your version is V2 you can switch to the V1 console. <img src="https://raw.githubusercontent.com/Ben74x/devfolio/master/content/blog/Image%20Recognition%20and%20Chatbot%20Website%20Using%20AWS/Screenshot%20from%202022-10-11%2021-07-09.png" alt=""> </br></br></br>
 3. Select `Custom Bot` and fill in the page with the below information.
@@ -148,6 +152,7 @@ Correct Declaration - {size} {drink} {flavour} </br></br>
 14. Test the bot by clicking the right hand side `Test Chatbot` toolbar to expand the chatbot window. </br></br>
 15. Type `I would like a small watermelon energy drink`, there should be a response of `Intent OrderDrink is ReadyForFulfillment: drink\:energy drink flavour\:watermelon size\:small`. This can be seen in the image below. <img src="https://raw.githubusercontent.com/Ben74x/devfolio/master/content/blog/Image%20Recognition%20and%20Chatbot%20Website%20Using%20AWS/Screenshot%20from%202022-10-11%2022-58-58.png" alt="">
 
+Congratulations, you have just built a basic voice interface for the chatbot! You built out a basic voice interaction using the Amazon Lex service. You also learnt about intents, slots, slot types and utterances and was able to make it function as intended.
 
 
 
