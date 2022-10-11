@@ -146,7 +146,7 @@ Correct Declaration - {size} {drink} {flavour} </br></br>
 
 13. Click `Build` on the top right corner of the page. </br></br>
 14. Test the bot by clicking the right hand side `Test Chatbot` toolbar to expand the chatbot window. </br></br>
-15. Type `I would like a small watermelon energy drink`, there should be a response of `Intent OrderDrink is ReadyForFulfillment: drink\:energy drink flavour\:watermelon size\:small`. This can be seen in the image below. 
+15. Type `I would like a small watermelon energy drink`, there should be a response of `Intent OrderDrink is ReadyForFulfillment: drink\:energy drink flavour\:watermelon size\:small`. This can be seen in the image below. <img src="https://raw.githubusercontent.com/Ben74x/devfolio/master/content/blog/Image%20Recognition%20and%20Chatbot%20Website%20Using%20AWS/Screenshot%20from%202022-10-11%2022-58-58.png" alt="">
 
 
 
