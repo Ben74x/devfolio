@@ -55,4 +55,21 @@ In this project, the aim is to build out an AWS Lex Chatbot and Amazon Rekogniti
 Let's get started!!
 
 1. Once you have logged into the AWS Console, search for Amazon Lex in the search bar like the picture below. <img src="https://raw.githubusercontent.com/Ben74x/devfolio/master/content/blog/Image%20Recognition%20and%20Chatbot%20Website%20Using%20AWS/Screenshot%20from%202022-10-11%2021-03-18.png" alt=""> </br></br></br>
-2. Click on the Amazon Lex console to see the below page and click on the Get Started button. Note that I am using the V1 console for the Amazon Lex service. If your version is V2 you can switch to the V1 console. <img src="https://raw.githubusercontent.com/Ben74x/devfolio/master/content/blog/Image%20Recognition%20and%20Chatbot%20Website%20Using%20AWS/Screenshot%20from%202022-10-11%2021-07-09.png" alt=""> </br></br></br>
+2. Click on the Amazon Lex console to see the below page and click on the `Get Started` button. Note that I am using the V1 console for the Amazon Lex service. If your version is V2 you can switch to the V1 console. <img src="https://raw.githubusercontent.com/Ben74x/devfolio/master/content/blog/Image%20Recognition%20and%20Chatbot%20Website%20Using%20AWS/Screenshot%20from%202022-10-11%2021-07-09.png" alt=""> </br></br></br>
+3. Select `Custom Bot` and fill in the page with the below information.
+<table>
+  <tr>
+    <th>**Field**</th>
+    <th>**Value**</th>
+  </tr>
+  <tr>
+    <td>Alfreds Futterkiste</td>
+    <td>Maria Anders</td>
+    <td>Germany</td>
+  </tr>
+  <tr>
+    <td>Centro comercial Moctezuma</td>
+    <td>Francisco Chang</td>
+    <td>Mexico</td>
+  </tr>
+</table>
