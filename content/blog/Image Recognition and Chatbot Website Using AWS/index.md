@@ -91,3 +91,5 @@ Let's get started!!
     <td>Yes</td>
   </tr>
 </table>
+
+4. Click `Create`
