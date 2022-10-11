@@ -138,9 +138,11 @@ What a user might say to trigger this intent. For example, a user might say "Can
 Note
 Make sure to leave a space before and after the slot values.
 
-- Incorrect Declaration due to no spaces between the slots - {size}{drink}{flavour}
 
-- Correct Declaration - {size} {drink} {flavour} </br></br>
+Incorrect Declaration due to no spaces between the slots - {size}{drink}{flavour}
+
+
+Correct Declaration - {size} {drink} {flavour} </br></br>
 
 13. Click `Build` on the top right corner of the page. </br></br>
 14. Test the bot by clicking the right hand side `Test Chatbot` toolbar to expand the chatbot window. </br></br>
