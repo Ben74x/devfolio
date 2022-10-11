@@ -88,6 +88,6 @@ Let's get started!!
   </tr>
   <tr>
     <td>COPPA</td>
-    <td>Leave as is</td>
+    <td>Yes</td>
   </tr>
 </table>
