@@ -72,8 +72,12 @@ Let's get started!!
     <td>COPPA</td>
   </tr>
   <tr>
-    <td>**CanteenBot**</td>
-    <td>Francisco Chang</td>
-    <td>Mexico</td>
+    <td>CanteenBot</td>
+    <td>English(UK)</td>
+    <td>Amy</td>
+    <td>5</td>
+    <td>No</td>
+    <td>Leave as is</td>
+    <td>Yes</td>
   </tr>
 </table>
