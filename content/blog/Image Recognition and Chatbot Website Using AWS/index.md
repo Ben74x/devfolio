@@ -141,7 +141,7 @@ When the chatbot starts running, Amazon Lex prompts the user for specific slot v
 **What are utterances?**
 What a user might say to trigger this intent. For example, a user might say "Can I order a pizza please" or "I want to order a pizza".
 
-Note
+**Note**:
 Make sure to leave a space before and after the slot values.
 
 
