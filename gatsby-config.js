@@ -26,7 +26,7 @@ module.exports = {
         name: 'Canteen Bot Services',
         description:
           'A serverless website that uses image recognition and a chatbot to offer services on beverages - Built with AWS services',
-        link: 'https://bdwumah.dev/blog/Image%20Recognition%20and%20Chatbot%20Website%20Using%20AWS/',
+        link: '',
       },
       {
         name: 'Image Captioning App',
