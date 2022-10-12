@@ -284,7 +284,13 @@ Congratulations ! You’ve built your first CanteenBot that can order drinks! Yo
 
 <img src="https://raw.githubusercontent.com/Ben74x/devfolio/master/content/blog/Image%20Recognition%20and%20Chatbot%20Website%20Using%20AWS/Picture10.png" alt=""> </br></br></br> 
 
+<h2 id="Additional Features">Additional Features</h2>
+In this section, we are going to add buttons to the responses of your questions to enhance the chatbot. We are also going to use a prepared template to launch the chatbot into a live website.
 
+
+<h3 id="Adding Buttons">Adding Buttons</h3>
+1. Go to the Amazon Lex console and select your chatbot by clicking on the name.</br></br>
+2. Go to the slot where you want to see buttons for the responses and select the settings icon on the far right. 
 
 
 
