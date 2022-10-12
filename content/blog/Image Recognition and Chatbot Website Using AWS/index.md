@@ -1036,15 +1036,17 @@ We can place the files on Amazon S3 (Simple Storage Service) and use Amazon Clou
 4. Find your bucket name and click on the name to enter your bucket. </br></br>
 5. Drag your `main.html`, `style.css`, `chatbot.js` and `video.js` files into the bucket and then click upload. </br></br>
 6. Go to the services bar on the top left and type `Amazon CloudFront` to go to the Amazon CloudFront service console. </br></br>
-7. Click `Create Distribution` on the top left within the service panel.
+7. Click `Create Distribution` on the top left within the service panel. </br></br>
 8. Within the next page, select your bucket created earlier for the `origin domain name`. This tells Amazon CloudFront which bucket to get your html file.</br>
 Set `Yes use OAI`. This prevents bucket from being accessed publicly which is the best practice.</br>
 Set `Origin Access Identity as Create a New OAI`. This allocates an identity to the Amazon CloudFront distribution and is used to access the buckets. </br>
 Set `Bucket Policy as Yes, update the bucket policy`. Allows the origin access identity to access the bucket contents. </br>
-</br></br>
-9. Set the `Viewer Protocol Policy as Redirect HTTP to HTTPS`. There needs to be HTTPS set to access your camera on the device.
-10. Set the `Default Root Object` as `main.html`.
-11. Click `Create Distribution` on the bottom right to create your distribution and wait 10-15 minutes.
+<img src="https://raw.githubusercontent.com/Ben74x/devfolio/master/content/blog/Image%20Recognition%20and%20Chatbot%20Website%20Using%20AWS/Screenshot%20from%202022-10-12%2021-35-10.png" alt=""> </br></br></br>
+9. Set the `Viewer Protocol Policy as Redirect HTTP to HTTPS`. There needs to be HTTPS set to access your camera on the device.<img src="https://raw.githubusercontent.com/Ben74x/devfolio/master/content/blog/Image%20Recognition%20and%20Chatbot%20Website%20Using%20AWS/Screenshot%20from%202022-10-12%2021-39-02.png" alt=""> </br></br></br>
+10. Set the `Default Root Object` as `main.html`. <img src="https://raw.githubusercontent.com/Ben74x/devfolio/master/content/blog/Image%20Recognition%20and%20Chatbot%20Website%20Using%20AWS/Screenshot%20from%202022-10-12%2021-39-57.png" alt=""> </br></br></br>
+11. Click `Create Distribution` on the bottom right to create your distribution and wait 10-15 minutes. </br></br>
+12. Click `Distributions` on the left hand side and go to your distribution Domain Name. Copy and paste that name to your web browser to see your website. Allow it to access your camera. </br></br>
+12. Try accessing the website on your phone and you should be able to use both cameras to undertake image recognition.
 
 
 
