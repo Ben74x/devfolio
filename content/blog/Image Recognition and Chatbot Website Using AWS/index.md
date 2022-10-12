@@ -3,7 +3,7 @@ title: Amazon Lex & Rekognition Project, AI/ML Serverless
 date: '2022-07-31T20:12:37.00Z'
 description: 'Using AWS AI/ML services to create a website that uses image recognition and chatbot'
 ---
-<a href="##Building the chatbot">top</a>.
+<a href="#Building the chatbot">top</a>.
 
 Hello, Hola, Ciao, Bonjour, Hallo. Well well let's just say I was getting bored of using the same introduction in my blogs so I wanted to switch up a little :). In this blog we are going to utilize some of the AI/ML services in AWS. We are going to build a serveless website that uses image recognition and a chatbot system. AWS has services that can be used to create these with ease instead of taking time to train these ML models from scratch...Amazing right?
 I'm going to assume you know how to host static websites on S3. If you don't know how to do that, I have a blog on it and you can check it out. To do this project, you are not expected to have any background knowledge in the AI?ML services. Having a general understanding of Javascript will be perfect for the project. Now let's focus on the AI/ML services. AWS has services that support the developments of chatbot and image recognition systems. These services are **Amazon Lex** and **Amazon Rekognition**
