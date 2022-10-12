@@ -893,7 +893,131 @@ This code includes a button on the bottom right corner and will open a form when
         }
 ```
 </br></br>
-3. The webpage should look like the below now. The orange button on the right hand side should be seen now but you can't interact with it at this point in time.
+3. The webpage should look like the below now. The orange button on the right hand side should be seen now but you can't interact with it at this point in time. <img src="https://raw.githubusercontent.com/Ben74x/devfolio/master/content/blog/Image%20Recognition%20and%20Chatbot%20Website%20Using%20AWS/Screenshot%20from%202022-10-12%2020-54-44.png" alt=""> </br></br></br>
+4. To link the Lex chatbot functionality with the website, first create a new file in the same directory called `chatbot.js`. Paste the following code in that file.
+```js
+    // Sets the focus to the input box
+        document.getElementById("wisdom").focus();
+        
+        //Open the Lex PopUp
+        function openForm() {
+            document.getElementById("myForm").style.display = "block";
+        }
+        
+        //Closes The Lex PopUp
+        function closeForm() {
+            document.getElementById("myForm").style.display = "none";
+        }
+
+        //Integrate with Amazon Lex
+        var lexruntime = new AWS.LexRuntime();
+        var lexUserId = 'chatbot-demo' + Date.now();
+        var sessionAttributes = {};
+
+        function pushChat() {
+
+            // if there is text to be sent...
+            var wisdomText = document.getElementById('wisdom');
+            if (wisdomText && wisdomText.value && wisdomText.value.trim().length > 0) {
+
+                // disable input to show we're sending it
+                var wisdom = wisdomText.value.trim();
+                wisdomText.value = '...';
+                wisdomText.locked = true;
+
+                // send it to the Lex runtime
+                var params = {
+                    botAlias: 'Insert Bot Alias Here',
+                    botName: 'Insert Bot Name',
+                    inputText: wisdom,
+                    userId: lexUserId,
+                    sessionAttributes: sessionAttributes
+                };
+                showRequest(wisdom);
+                lexruntime.postText(params, function(err, data) {
+                    if (err) {
+                        console.log(err, err.stack);
+                        showError('Error:  ' + err.message + ' (see console for details)')
+                    }
+                    if (data) {
+                        // capture the sessionAttributes for the next cycle
+                        sessionAttributes = data.sessionAttributes;
+                        // show response and/or error/dialog status
+                        showResponse(data);
+                    }
+                    // re-enable input
+                    wisdomText.value = '';
+                    wisdomText.locked = false;
+                });
+            }
+            // we always cancel form submission
+            return false;
+        }
+
+        function showRequest(daText) {
+
+            var conversationDiv = document.getElementById('conversation');
+            var requestPara = document.createElement("P");
+            requestPara.className = 'userRequest';
+            requestPara.appendChild(document.createTextNode(daText));
+            conversationDiv.appendChild(requestPara);
+            conversationDiv.scrollTop = conversationDiv.scrollHeight;
+        }
+
+        function showError(daText) {
+            var conversationDiv = document.getElementById('conversation');
+            var errorPara = document.createElement("P");
+            errorPara.className = 'lexError';
+            errorPara.appendChild(document.createTextNode(daText));
+            conversationDiv.appendChild(errorPara);
+            conversationDiv.scrollTop = conversationDiv.scrollHeight;
+        }
+
+        function showResponse(lexResponse) {
+
+            var conversationDiv = document.getElementById('conversation');
+            var responsePara = document.createElement("P");
+            responsePara.className = 'lexResponse';
+            if (lexResponse.message) {
+                responsePara.appendChild(document.createTextNode(lexResponse.message));
+                responsePara.appendChild(document.createElement('br'));
+            }
+            if (lexResponse.dialogState === 'ReadyForFulfillment') {
+                responsePara.appendChild(document.createTextNode(
+                    'Ready for fulfillment'));
+            } else {
+                responsePara.appendChild(document.createTextNode(
+                    '(' + lexResponse.dialogState + ')'));
+            }
+            conversationDiv.appendChild(responsePara);
+            conversationDiv.scrollTop = conversationDiv.scrollHeight;
+        }
+
+        /*MIT No Attribution
+
+        Copyright 2021 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+
+        Permission is hereby granted, free of charge, to any person obtaining a copy of this
+        software and associated documentation files (the "Software"), to deal in the Software
+        without restriction, including without limitation the rights to use, copy, modify,
+        merge, publish, distribute, sublicense, and/or sell copies of the Software, and to
+        permit persons to whom the Software is furnished to do so.
+
+        THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED,
+        INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A
+        PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT
+        HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION
+        OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE
+        SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.*/
+```
+</br></br>
+5. Replace the botName and botAlias in the code from step 4 on lines 32 and 33 with the corresponding Lex Bot name and alias for your Amazon Lex chatbot. </br></br>
+6. Add the below code snippet underneath `<script src="video.js"></script>` within the `main.html` file.
+```js
+    <script src="chatbot.js"></script>
+```
+</br></br>
+7. You should now be able to expand the chatbot window and interact with your Amazon Lex Chatbot.
 
 
 
