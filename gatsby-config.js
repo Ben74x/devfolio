@@ -23,10 +23,10 @@ module.exports = {
         link: '',
       },
       {
-        name: 'ChromeExtensionKit',
+        name: 'Canteen Bot Services',
         description:
-          'Kit to jump-start your Chrome extension projects with a variety of battle-tested starter templates',
-        link: 'https://chromeextensionkit.com/?ref=devfolio',
+          'A serverless website that uses image recognition and a chatbot to offer services on beverages - Built with AWS services',
+        link: 'https://bdwumah.dev/blog/Image%20Recognition%20and%20Chatbot%20Website%20Using%20AWS/',
       },
       {
         name: 'Image Captioning App',
