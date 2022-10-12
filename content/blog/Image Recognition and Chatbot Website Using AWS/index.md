@@ -731,7 +731,7 @@ for(var i = 0; i < data.Labels.length; i++){
     }
 ```
 </br></br>
-**This somes up how we use Amazon Rekognition within our website
+**This somes up how we use Amazon Rekognition within our website**
 
 
 
