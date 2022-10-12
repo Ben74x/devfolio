@@ -169,6 +169,7 @@ You can undertake custom actions once the intent is triggered. This can be done 
 1. Go to Lambda by searching for the service on the top left hand corner like below and click on the lambda service. <img src="https://raw.githubusercontent.com/Ben74x/devfolio/master/content/blog/Image%20Recognition%20and%20Chatbot%20Website%20Using%20AWS/Screenshot%20from%202022-10-12%2012-09-17.png" alt=""> </br></br></br>
 2. You should see the below dashboard, so click `Create function`. <img src="https://raw.githubusercontent.com/Ben74x/devfolio/master/content/blog/Image%20Recognition%20and%20Chatbot%20Website%20Using%20AWS/Screenshot%20from%202022-10-12%2012-10-10.png" alt=""> </br></br></br>
 3. Select `Author from scratch` and set the function name as `CanteenBot`. Have the runtime set to `Node.js.14.x`. and click `Create function`. <img src="https://raw.githubusercontent.com/Ben74x/devfolio/master/content/blog/Image%20Recognition%20and%20Chatbot%20Website%20Using%20AWS/Screenshot%20from%202022-10-12%2012-11-46.png" alt=""> </br></br></br>
+4. Delete the code that is within index.js (highlighted in blue in the image below) and leave that file blank. <img src="https://raw.githubusercontent.com/Ben74x/devfolio/master/content/blog/Image%20Recognition%20and%20Chatbot%20Website%20Using%20AWS/Screenshot%20from%202022-10-12%2012-14-24.png" alt=""> </br></br></br>
 
 
 
