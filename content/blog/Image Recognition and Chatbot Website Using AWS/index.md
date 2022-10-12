@@ -166,9 +166,9 @@ In the previous section we were able to build out the basic voice interactions o
 You can undertake custom actions once the intent is triggered. This can be done via code and we recommend that you create a Lambda function to fulfill the intent. Lambda Functions are pieces of code that you can write on the AWS console to perform custom actions.
 
 
-1. Go to Lambda by searching for the service on the top left hand corner like below and click on the lambda service. <img src="https://raw.githubusercontent.com/Ben74x/devfolio/master/content/blog/Image%20Recognition%20and%20Chatbot%20Website%20Using%20AWS/Screenshot%20from%202022-10-12%2012-09-17.png" alt=""> </br></br>
-2. You should see the below dashboard, so click `Create function`. <img src="https://raw.githubusercontent.com/Ben74x/devfolio/master/content/blog/Image%20Recognition%20and%20Chatbot%20Website%20Using%20AWS/Screenshot%20from%202022-10-12%2012-10-10.png" alt=""> </br></br>
-3. Select `Author from scratch` and set the function name as `CanteenBot`. Have the runtime set to `Node.js.14.x`. and click `Create function`. <img src="https://raw.githubusercontent.com/Ben74x/devfolio/master/content/blog/Image%20Recognition%20and%20Chatbot%20Website%20Using%20AWS/Screenshot%20from%202022-10-12%2012-11-46.png" alt=""> </br></br>
+1. Go to Lambda by searching for the service on the top left hand corner like below and click on the lambda service. <img src="https://raw.githubusercontent.com/Ben74x/devfolio/master/content/blog/Image%20Recognition%20and%20Chatbot%20Website%20Using%20AWS/Screenshot%20from%202022-10-12%2012-09-17.png" alt=""> </br></br></br>
+2. You should see the below dashboard, so click `Create function`. <img src="https://raw.githubusercontent.com/Ben74x/devfolio/master/content/blog/Image%20Recognition%20and%20Chatbot%20Website%20Using%20AWS/Screenshot%20from%202022-10-12%2012-10-10.png" alt=""> </br></br></br>
+3. Select `Author from scratch` and set the function name as `CanteenBot`. Have the runtime set to `Node.js.14.x`. and click `Create function`. <img src="https://raw.githubusercontent.com/Ben74x/devfolio/master/content/blog/Image%20Recognition%20and%20Chatbot%20Website%20Using%20AWS/Screenshot%20from%202022-10-12%2012-11-46.png" alt=""> </br></br></br>
 
 
 
