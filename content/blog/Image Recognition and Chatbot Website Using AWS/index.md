@@ -543,7 +543,7 @@ This is a basic HTML file with the use of a Bootstrap framework to easily struct
 </br>
 This code will initiate the camera window so you can capture images from your laptop camera.
 </br></br>
-5. Double click on your main.html file in your file director and you should see the screen below and when the browser asks for camera permissions, click **Allow**. You should now be able to see a screen with the capture button applied in the middle of the page.
+5. Double click on your main.html file in your file director and when the browser asks for camera permissions, click **Allow**. You should now be able to see a screen with the capture button applied in the middle of the page. </br></br>
 6. Let's change the background color for the webpage. Create a file called `style.css` and paste the below code inside.
 ```js
 body {background-color: #232F3E;}
@@ -585,7 +585,7 @@ This sets the background to a particular colour, you can change the hex colour c
     </head>
 ```
 </br></br>
-9. Refresh your webpage and your background colour will have changed into the image below.
+9. Refresh your webpage and your background colour accordingly. </br></br>
 10. We also want to identify the items found in the image. Copy and paste the below code within the body section of the `main.html` file after the `<div id= "List" class="col-md-4 text-center">` tag. Comments in the file will indicate the location. This code will show a list of item results once the Rekognition API is integrated.
 ```js
 <div id="ImageResults">
@@ -694,7 +694,7 @@ This sets the background to a particular colour, you can change the hex colour c
     SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.*/
 ```
 </br></br>
-12. After adding all those components, save the file and refresh your web page. When you click capture, the Rekognition API would be used to identify the objects and you should see a list of objects on the left hand side like the below image. Additionally, a spinning icon should come up when capturing images.
+12. After adding all those components, save the file and refresh your web page. When you click capture, the Rekognition API would be used to identify the objects and you should see a list of objects on the left hand side. Additionally, a spinning icon should come up when capturing images. </br></br>
 13. We can add some custom functionality such as Google searching any objects identified. Add the below code snippet inside `video.js` after `pageList.appendChild(element)`.
 ```js
 //If labels are not face, person or human and it's the first time search is occurring, search for the detected object in Google.
@@ -732,7 +732,168 @@ for(var i = 0; i < data.Labels.length; i++){
 ```
 </br></br>
 **This somes up how we use Amazon Rekognition within our website**
+</br></br></br>
 
+
+<h3 id="Amazon Lex Website Integration">Amazon Lex Website Integration</h3>
+
+Once you have finished creating your website with Rekognition, let's add a chatbot into it.
+
+1. Open your `main.html` and paste the code in the `<div id="LexChatbot" class="col-md-4"></div>` tags.
+
+This code includes a button on the bottom right corner and will open a form when the button is clicked.
+```js
+<button type="button" class="btn open-button btn-circle btn-md"  style="background-color:#FF9900; color:#000000; visibility: visible;"  onclick="openForm()">
+    <svg width="3em" height="3em" viewBox="0 0 16 16" class="bi bi-chat-left-dots" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+        <path fill-rule="evenodd" d="M14 1H2a1 1 0 0 0-1 1v11.586l2-2A2 2 0 0 1 4.414 11H14a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1zM2 0a2 2 0 0 0-2 2v12.793a.5.5 0 0 0 .854.353l2.853-2.853A1 1 0 0 1 4.414 12H14a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2z"/>
+        <path d="M5 6a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm4 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm4 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0z"/>
+    </svg>
+    </button> 
+           
+    <div class="chat-popup" id="myForm">
+
+        <form id="chatform" class="form-container">
+        <div id="conversation" style="max-width: 300px; padding: 10px; height: 350px; border: 1px solid #ccc; background-color: #eee; padding: 4px; overflow: scroll"></div>
+        <br>
+        <input type="text" id="wisdom" size="80" value="" style="max-width: 280px; padding: 10px;"" placeholder="I want a drink...">
+        <br><br>
+        <button type="submit" class="btn" onclick= "return pushChat();">Send</button>
+        <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+        </form>
+        
+    </div>
+```
+</br></br>
+2. Paste the below code inside the `style.css` before the copyright statment so the form and buttons are styled correctly.
+```js
+    input#wisdom {
+            padding: 1px;
+            font-size: 1em;
+            width: 300px
+        }
+
+        input::placeholder {
+            color: #ccc;
+            font-style: italic;
+        }
+
+        p.userRequest {
+            margin: 4px;
+            padding: 4px 10px 4px 10px;
+            border-radius: 4px;
+            min-width: 50%;
+            max-width: 85%;
+            float: left;
+            background-color: #7d7;
+        }
+
+        p.lexResponse {
+            margin: 4px;
+            padding: 4px 10px 4px 10px;
+            border-radius: 4px;
+            text-align: right;
+            min-width: 50%;
+            max-width: 85%;
+            float: right;
+            background-color: #bbf;
+            font-style: italic;
+        }
+
+        p.lexError {
+            margin: 4px;
+            padding: 4px 10px 4px 10px;
+            border-radius: 4px;
+            text-align: right;
+            min-width: 50%;
+            max-width: 85%;
+            float: right;
+            background-color: #f77;
+        }
+
+        body {font-family: Arial, Helvetica, sans-serif;}
+
+        /* Button used to open the chat form - fixed at the bottom of the page */
+        .open-button {
+        background-color: #555;
+        color: white;
+        padding: 16px 20px;
+        border: none;
+        cursor: pointer;
+        opacity: 0.8;
+        position: fixed;
+        bottom: 23px;
+        right: 28px;
+        width: 280px;
+        }
+
+        /* Circle button CSS */
+        .btn-circle.btn-md { 
+            width: 50px; 
+            height: 50px; 
+            padding: 7px 10px; 
+            border-radius: 25px; 
+            font-size: 10px; 
+            text-align: center; 
+        } 
+
+        /* The popup chat - hidden by default */
+        .chat-popup {
+        display: none;
+        position: fixed;
+        bottom: 0;
+        right: 15px;
+        border: 3px solid #f1f1f1;
+        z-index: 9;
+        }
+
+        /* Add styles to the form container */
+        .form-container {
+        max-width: 300px;
+        padding: 10px;
+        background-color: white;
+        }
+
+        /* Full-width textarea */
+        .form-container textarea {
+        width: 100%;
+        padding: 15px;
+        margin: 5px 0 22px 0;
+        border: none;
+        background: #f1f1f1;
+        resize: none;
+        min-height: 200px;
+        }
+
+        /* When the textarea gets focus, do something */
+        .form-container textarea\:focus {
+        background-color: #ddd;
+        outline: none;
+        }
+
+        /* Set a style for the submit/send button */
+        .form-container .btn {
+        background-color: #4CAF50;
+        color: white;
+        padding: 16px 20px;
+        border: none;
+        cursor: pointer;
+        width: 100%;
+        margin-bottom:10px;
+        opacity: 0.8;
+        }
+
+        /* Add a red background color to the cancel button */
+        .form-container .cancel {
+        background-color: red;
+        }
+
+        /* Add some hover effects to buttons */
+        .form-container .btn\:hover, .open-button\:hover {
+        opacity: 1;
+        }
+```
+</br></br>
+3. The webpage should look like the below now. The orange button on the right hand side should be seen now but you can't interact with it at this point in time.
 
 
 
