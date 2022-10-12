@@ -290,7 +290,7 @@ In this section, we are going to add buttons to the responses of your questions 
 
 <h3 id="Adding Buttons">Adding Buttons</h3>
 1. Go to the Amazon Lex console and select your chatbot by clicking on the name.</br></br>
-2. Go to the slot where you want to see buttons for the responses and select the settings icon on the far right.
+2. Go to the slot where you want to see buttons for the responses and select the settings icon on the far right. <img src="https://raw.githubusercontent.com/Ben74x/devfolio/master/content/blog/Image%20Recognition%20and%20Chatbot%20Website%20Using%20AWS/Screenshot%20from%202022-10-12%2013-44-43.png" alt=""> </br></br></br>
 3. A popup should appear as below and you can scroll down to fill in the values corresponding to the buttons and click `Save`.
 
 
