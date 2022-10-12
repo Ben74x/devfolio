@@ -62,7 +62,7 @@ module.exports = {
       {
         name: 'Other',
         description:
-          'Amazon Web Services (AWS), Microservices, Infrastracture as Code, API design',
+          'Amazon Web Services (AWS), Microservices, Infrastructure as Code, API design',
       },
     ],
   },
