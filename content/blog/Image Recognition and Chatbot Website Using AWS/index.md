@@ -299,6 +299,8 @@ In this section, we are going to add buttons to the responses of your questions 
 4. Build the chatbot. </br></br>
 5. Test the chatbot by typing `I want a drink` and an image with the corresponding options as buttons should be displayed. <img src="https://raw.githubusercontent.com/Ben74x/devfolio/master/content/blog/Image%20Recognition%20and%20Chatbot%20Website%20Using%20AWS/Screenshot%20from%202022-10-12%2013-57-35.png" alt=""> </br></br></br>
 
+**You should now see buttons for your responses!**
+
 
 
 
