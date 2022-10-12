@@ -56,7 +56,7 @@ In this project, the aim is to build out an AWS Lex Chatbot and Amazon Rekogniti
 
 Let's get started!!
 <h2 id="Building the chatbot">Building the chatbot</h2>
-For this project you need to be able to access Amazon Cloudfront, Cloudformation, Cognito, Lambda, Lex, S3 and Rekogntion. I recommend having a code editor such as Visual Studio Code , to complete Amazon Rekogntion website integration and Amazon Lex website integration
+For this project we will use Amazon Cloudfront, Cloudformation, Cognito, Lambda, Lex, S3 and Rekogntion. I recommend having a code editor such as Visual Studio Code , to complete Amazon Rekogntion website integration and Amazon Lex website integration
 
 
 <h3 id="Basic Voice Interactions">Basic Voice Interactions</h3>
@@ -319,6 +319,26 @@ In this section, we are going to add buttons to the responses of your questions 
 12. Once the CloudFormation stack is complete as shown with the below screenshot, select the output tab to find your chatbot website URL. The link for your web application is found under the title WebAppUrl as seen below. <img src="https://raw.githubusercontent.com/Ben74x/devfolio/master/content/blog/Image%20Recognition%20and%20Chatbot%20Website%20Using%20AWS/Screenshot%20from%202022-10-12%2015-13-51.png" alt=""> </br></br></br>
 
 13. Browse to the URL and you should see your website live like the below screenshot. You can experiment with the website like I've done. <img src="https://raw.githubusercontent.com/Ben74x/devfolio/master/content/blog/Image%20Recognition%20and%20Chatbot%20Website%20Using%20AWS/Screenshot%20from%202022-10-12%2015-17-58.png" alt=""> </br></br></br>
+
+
+<h2 id="Amazon Rekognition">Amazon Rekognition</h2>
+
+We will test how AWS Rekognition undertakes image recognition using the AWS console. We will also set up  Amazon Cognito Identity Pool so that we can log on to the website. Then, we will use a template to create a Rekognition demo on a live website. Finally, we will be use a template to add your chatbot into the live website. Let's break it down one by one
+
+
+<h3 id="Console Demo">Console Demo</h3>
+
+1. Once you have logged into the AWS Console, search for Amazon Rekognition and click on it. </br></br>
+2. On the left, under the `Demos title`, click on `Label Detection`. You should see the below image recognition once you click on the link.
+3. Expand `Request` and `Response` on the right hand side to see the general JSON format that Rekognition responds with.
+4. Click on the bottom `Upload` button at the bottom to upload your own image for Object and Scene Detection.
+5. Click on `Facial Analysis` on the left hand side and repeat steps 3 and 4.
+6. Click on `Celebrity Recognition` on the left hand side and repeat steps 3 and 4.
+7. Click on `Face Comparison` on the left hand side and repeat steps 3 and 4.
+8. Click on `Text in image` on the left hand side and repeat steps 3 and 4.
+
+
+This is just one way to use Rekognition. Next we will be embedding it into a website.
 
 
 
