@@ -315,13 +315,9 @@ In this section, we are going to add buttons to the responses of your questions 
 8. Scroll down to **WebAppConfBotInitialText** to set the initial text that you want dispalyed on the website chatbot. Change the **WebAppConfBotInitialSpeech** to specify what you want the website to say if microphone is used. <img src="https://raw.githubusercontent.com/Ben74x/devfolio/master/content/blog/Image%20Recognition%20and%20Chatbot%20Website%20Using%20AWS/Screenshot%20from%202022-10-12%2014-50-59.png" alt=""> </br></br></br>
 9. Change the **WebAppConfToolbarTitle** to specify what you want the toolbar on the website to say. Such as 'Canteen Bot'. <img src="https://raw.githubusercontent.com/Ben74x/devfolio/master/content/blog/Image%20Recognition%20and%20Chatbot%20Website%20Using%20AWS/Screenshot%20from%202022-10-12%2014-51-29.png" alt=""> </br></br></br>
 10. Agree to the terms and conditions and click `Create Stack`. <img src="https://raw.githubusercontent.com/Ben74x/devfolio/master/content/blog/Image%20Recognition%20and%20Chatbot%20Website%20Using%20AWS/Screenshot%20from%202022-10-12%2014-52-05.png" alt=""> </br></br></br>
-
-
-
-
-9. 
-
-
+11. Wait around 5-10 minutes for the website to deploy. </br></br>
+12. Once the CloudFormation stack is complete as shown with the below screenshot, select the output tab to find your chatbot website URL. The link for your web application is found under the title WebAppUrl as seen below.
+13. Browse to the URL and you should see your website live like the below screenshot. You can experiment with the website like I've done.
 
 
 
