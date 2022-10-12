@@ -1017,7 +1017,41 @@ This code includes a button on the bottom right corner and will open a form when
     <script src="chatbot.js"></script>
 ```
 </br></br>
-7. You should now be able to expand the chatbot window and interact with your Amazon Lex Chatbot.
+7. You should now be able to expand the chatbot window and interact with your Amazon Lex Chatbot. <img src="https://raw.githubusercontent.com/Ben74x/devfolio/master/content/blog/Image%20Recognition%20and%20Chatbot%20Website%20Using%20AWS/Screenshot%20from%202022-10-12%2021-04-43.png" alt=""> </br></br></br>
+
+**This should integrate the chatbot on the website**
+</br></br>
+
+<h2 id="Website Hosting">Website Hosting</h2>
+Whew! Don't give up!! We're almost there. We've been able to integrate the chatbot and recognition app on the website. However, this has been done locally. Let's try and host the website on Amazon S3 using Cloudfront CDN.
+
+
+<h3 id="Amazon S3 and Amazon CloudFront Hosting">Website Hosting</h3>
+We can place the files on Amazon S3 (Simple Storage Service) and use Amazon CloudFront (content delivery network) to distribute the website. The use of Amazon CloudFront (content delivery network) is to cache website static content closer to the user that accessed the website so loading time are faster. In addition to speed, we are using Amazon CloudFront so we can attach a certificate to it, enabling secure communication on the web using HTTPS. This also means we can access the cameras on our devices using this website.
+
+
+1. Let's navigate to the AWS Console and type Amazon S3 in the search bar to go to the Amazon S3 console. </br></br>
+2. Once inside the Amazon S3 console, create a new bucket by clicking `Create Bucket`. </br></br>
+3. Give a unique name to the bucket and click `Create bucket` on the bottom right corner. </br></br>
+4. Find your bucket name and click on the name to enter your bucket. </br></br>
+5. Drag your `main.html`, `style.css`, `chatbot.js` and `video.js` files into the bucket and then click upload. </br></br>
+6. Go to the services bar on the top left and type `Amazon CloudFront` to go to the Amazon CloudFront service console. </br></br>
+7. Click `Create Distribution` on the top left within the service panel.
+8. Within the next page, select your bucket created earlier for the `origin domain name`. This tells Amazon CloudFront which bucket to get your html file.</br>
+Set `Yes use OAI`. This prevents bucket from being accessed publicly which is the best practice.</br>
+Set `Origin Access Identity as Create a New OAI`. This allocates an identity to the Amazon CloudFront distribution and is used to access the buckets. </br>
+Set `Bucket Policy as Yes, update the bucket policy`. Allows the origin access identity to access the bucket contents. </br>
+</br></br>
+9. Set the `Viewer Protocol Policy as Redirect HTTP to HTTPS`. There needs to be HTTPS set to access your camera on the device.
+10. Set the `Default Root Object` as `main.html`.
+11. Click `Create Distribution` on the bottom right to create your distribution and wait 10-15 minutes.
+
+
+
+
+
+
+
 
 
 
