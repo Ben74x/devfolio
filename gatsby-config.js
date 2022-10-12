@@ -19,7 +19,7 @@ module.exports = {
       {
         name: 'VProfile',
         description:
-          'A fast automated web stack server stack built on Hashicorp Vagrant using IaC',
+          'A fast automated web stack server stack built on HashiCorp Vagrant using IaC',
         link: 'https://github.com/Ben74x/VProfile-Proj',
       },
       {
