@@ -171,7 +171,106 @@ You can undertake custom actions once the intent is triggered. This can be done 
 3. Select `Author from scratch` and set the function name as `CanteenBot`. Have the runtime set to `Node.js.14.x`. and click `Create function`. <img src="https://raw.githubusercontent.com/Ben74x/devfolio/master/content/blog/Image%20Recognition%20and%20Chatbot%20Website%20Using%20AWS/Screenshot%20from%202022-10-12%2012-11-46.png" alt=""> </br></br></br>
 4. Delete the code that is within index.js (highlighted in blue in the image below) and leave that file blank. <img src="https://raw.githubusercontent.com/Ben74x/devfolio/master/content/blog/Image%20Recognition%20and%20Chatbot%20Website%20Using%20AWS/Screenshot%20from%202022-10-12%2012-14-24.png" alt=""> </br></br></br>
 5. Copy and paste the below code within index.js.
-'''
+```js
+'use strict';
+    // --------------- Helpers to build responses which match the structure of the necessary dialog actions -----------------------
+
+    function close(sessionAttributes, fulfillmentState, message, responseCard) {
+        return {
+            sessionAttributes,
+            dialogAction: {
+                type: 'Close',
+                fulfillmentState,
+                message,
+                responseCard,
+            },
+        };
+    }
+
+    // --------------- Functions that control the skill's behavior -----------------------
+
+    //Used to fulfill the ordering for canteen food.
+
+    //Function where the intent request is submitted and where you can customise.
+    function OrderDrink(intentRequest, callback) {
+
+        const outputSessionAttributes = intentRequest.sessionAttributes;
+        const source = intentRequest.invocationSource;
+        console.log(intentRequest);
+
+        if (source === 'FulfillmentCodeHook') {
+
+            //Used once all slots are fulfilled.
+
+            const slots = intentRequest.currentIntent.slots;
+            console.log(slots);
+            const drink = slots.drink;
+            const size = slots.size;
+            const flavour = slots.flavour
+
+            //Change anything after 'content:' to display another message
+            //apart from the usual "Great! Your drink is available for pickup soon. Thanks for using CanteenBot!"
+            //To refer to the drink, size and flavour variables - use ${drink}, ${size} and ${flavour} within your bracketed text.
+
+            callback(close(outputSessionAttributes, 'Fulfilled', {
+                contentType: 'PlainText',
+                content: `Great!  Your ${size} ${flavour} ${drink} will be available for pickup soon.  Thanks for using CanteenBot!`
+            }));
+            return;
+        }
+
+    }
+
+    // --------------- Intents -----------------------
+
+    /**Called when the user specifies an intent for this skill.*/
+
+    function dispatch(intentRequest, callback) {
+
+        console.log(`intent=${intentRequest.currentIntent.name}`);
+
+        const name = intentRequest.currentIntent.name;
+        console.log(name);
+
+        // dispatch to the intent handlers - checks if the intent is OrderDrink and then initiates that function.
+        if (name.startsWith('OrderDrink')) {
+            return OrderDrink(intentRequest, callback);
+        }
+        throw new Error(`Intent with name ${name} not supported`);
+    }
+
+    // --------------- Main handler -----------------------
+
+    // Route the incoming request based on intent.
+    // The JSON body of the request is provided in the event slot.
+    exports.handler = (event, context, callback) => {
+
+        console.log(JSON.stringify(event));
+
+        try {
+            dispatch(event, (response) => callback(null, response));
+        } catch (err) {
+            callback(err);
+        }
+    };
+
+    /*MIT No Attribution
+
+    Copyright 2021 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+
+    Permission is hereby granted, free of charge, to any person obtaining a copy of this
+    software and associated documentation files (the "Software"), to deal in the Software
+    without restriction, including without limitation the rights to use, copy, modify,
+    merge, publish, distribute, sublicense, and/or sell copies of the Software, and to
+    permit persons to whom the Software is furnished to do so.
+
+    THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED,
+    INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A
+    PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT
+    HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION
+    OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE
+    SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.*/
+```
 
 
 
