@@ -159,6 +159,25 @@ Congratulations, you have just built a basic voice interface for the chatbot! Yo
 
 
 
+<h3 id="Lambda Integration">Lambda Integration</h3>
+In the previous section we were able to build out the basic voice interactions on Amazon Lex. The chatbot received your response and knows that you want to order a small watermelon energy drink. Now you need to add extra responses from the chatbot so your user knows that it has received it properly. To do this we will need to use the Lambda service.
+
+**How to fulfill the intent?**
+You can undertake custom actions once the intent is triggered. This can be done via code and we recommend that you create a Lambda function to fulfill the intent. Lambda Functions are pieces of code that you can write on the AWS console to perform custom actions.
+
+
+1. Go to Lambda by searching for the service on the top left hand corner like below and click on the lambda service.
+2. You should see the below dashboard, so click `Create function`.
+3. Select `Author from scratch` and set the function name as `CanteenBot`. Have the runtime set to `Node.js.14.x`. and click `Create function`.
+
+
+
+
+
+
+
+
+
 <a href="#top">Back to top of page</a>
 
 
