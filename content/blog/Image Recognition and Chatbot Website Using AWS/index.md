@@ -302,6 +302,15 @@ In this section, we are going to add buttons to the responses of your questions 
 **You should now see buttons for your responses!**
 
 
+<h3 id="Lex Website">Lex Website</h3>
+
+1. Once you have finished making your chatbot. You can publish it by clicking on the publish button on the top right. </br></br>
+2. Type in `PublishCanteenBot` as the alias in the popup window and click Publish.
+3. Publishing the chatbot will take a few seconds with the below popup appearing once published. Copy down the BotName and alias as you will use this at a later step.
+4. Open another tab and go to the link <a href="https://github.com/aws-samples/aws-lex-web-ui">The AWS Samples github Lex Web UI page</a>. It is a github repo that contains instructions on how to setup a web interface for Amazon Lex
+5. Scroll down the page until you see the Getting Started section and click on deploy stack for the Northern Virginia (us-east-1) region (or the region you have been using in this workshop) as seen with the below screenshot.
+
+
 
 
 
