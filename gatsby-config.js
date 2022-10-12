@@ -38,11 +38,6 @@ module.exports = {
     // Optional: List your experience, they must have `name` and `description`. `link` is optional.
     experience: [
       {
-        name: 'AWS Academy Training',
-        description: 'Cloud Architect Trainee, June 2022 - Present',
-        link: '',
-      },
-      {
         name: 'Npontu Technologies',
         description: 'Cloud Support Engineer, September 2020 - August 2021',
         link: '',
