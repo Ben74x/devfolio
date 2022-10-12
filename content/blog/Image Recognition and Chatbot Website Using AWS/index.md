@@ -329,13 +329,13 @@ We will test how AWS Rekognition undertakes image recognition using the AWS cons
 <h3 id="Console Demo">Console Demo</h3>
 
 1. Once you have logged into the AWS Console, search for Amazon Rekognition and click on it. </br></br>
-2. On the left, under the `Demos title`, click on `Label Detection`. You should see the below image recognition once you click on the link.
-3. Expand `Request` and `Response` on the right hand side to see the general JSON format that Rekognition responds with.
-4. Click on the bottom `Upload` button at the bottom to upload your own image for Object and Scene Detection.
-5. Click on `Facial Analysis` on the left hand side and repeat steps 3 and 4.
-6. Click on `Celebrity Recognition` on the left hand side and repeat steps 3 and 4.
-7. Click on `Face Comparison` on the left hand side and repeat steps 3 and 4.
-8. Click on `Text in image` on the left hand side and repeat steps 3 and 4.
+2. On the left, under the `Demos title`, click on `Label Detection`. You should see the below image recognition once you click on the link. <img src="https://raw.githubusercontent.com/Ben74x/devfolio/master/content/blog/Image%20Recognition%20and%20Chatbot%20Website%20Using%20AWS/Screenshot%20from%202022-10-12%2015-48-11.png" alt=""> </br></br></br>
+3. Expand `Request` and `Response` on the right hand side to see the general JSON format that Rekognition responds with. <img src="https://raw.githubusercontent.com/Ben74x/devfolio/master/content/blog/Image%20Recognition%20and%20Chatbot%20Website%20Using%20AWS/Screenshot%20from%202022-10-12%2015-49-53.png" alt=""> </br></br></br>
+4. Click on the bottom `Upload` button at the bottom to upload your own image for Object and Scene Detection. <img src="https://raw.githubusercontent.com/Ben74x/devfolio/master/content/blog/Image%20Recognition%20and%20Chatbot%20Website%20Using%20AWS/Screenshot%20from%202022-10-12%2015-50-04.png" alt=""> </br></br></br>
+5. Click on `Facial Analysis` on the left hand side and repeat steps 3 and 4. </br></br>
+6. Click on `Celebrity Recognition` on the left hand side and repeat steps 3 and 4. </br></br>
+7. Click on `Face Comparison` on the left hand side and repeat steps 3 and 4. </br></br>
+8. Click on `Text in image` on the left hand side and repeat steps 3 and 4. </br></br>
 
 
 This is just one way to use Rekognition. Next we will be embedding it into a website.
