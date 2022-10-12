@@ -1046,7 +1046,20 @@ Set `Bucket Policy as Yes, update the bucket policy`. Allows the origin access i
 10. Set the `Default Root Object` as `main.html`. <img src="https://raw.githubusercontent.com/Ben74x/devfolio/master/content/blog/Image%20Recognition%20and%20Chatbot%20Website%20Using%20AWS/Screenshot%20from%202022-10-12%2021-39-57.png" alt=""> </br></br></br>
 11. Click `Create Distribution` on the bottom right to create your distribution and wait 10-15 minutes. </br></br>
 12. Click `Distributions` on the left hand side and go to your distribution Domain Name. Copy and paste that name to your web browser to see your website. Allow it to access your camera. </br></br>
-12. Try accessing the website on your phone and you should be able to use both cameras to undertake image recognition.
+13. Try accessing the website on your phone and you should be able to use both cameras to undertake image recognition.</br><?br>
+
+**That sums everything up!!**
+Here is a summary of everything that we did:
+- Built a chatbot with basic interactions using **Amazon Lex console**
+- Used **Lambda** to respond to the user interactions
+- Explored the **Amazon Lex console** to add buttons to the responses of the question
+- Launched the chatbot on a website using an already existing **cloudformation template**
+- Tested how **Amazon Rekognition** undertakes image recognition using the AWS console
+- Used a template to create a **Rekognition** demo on a live website
+- Used a template to add the chatbot into the live website
+- Hosted the website on **S3** using **Cloudfront CDN**
+
+
 
 
 
