@@ -57,7 +57,7 @@ module.exports = {
       },
       {
         name: 'DevOps Tools',
-        description: 'Git, Maven, Jenkins, Ansible, Chef, Puppet, Docker, Terraform, Kubernetes',
+        description: 'Git, Vagrant, Bash Scripting, Linux, Docker, Elasticsearch, Grafana',
       },
       {
         name: 'Other',
