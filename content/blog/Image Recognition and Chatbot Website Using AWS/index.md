@@ -280,7 +280,7 @@ You can undertake custom actions once the intent is triggered. This can be done 
 11. Type `I would like a small watermelon energy drink`. If successful, there should be a response of “Great! your {drink} will be available for pickup soon. Thanks for using CanteenBot!”. <img src="https://raw.githubusercontent.com/Ben74x/devfolio/master/content/blog/Image%20Recognition%20and%20Chatbot%20Website%20Using%20AWS/Screenshot%20from%202022-10-12%2012-59-40.png" alt=""> </br></br></br>
 
 Congratulations ! You’ve built your first CanteenBot that can order drinks! You have been able to create an interactive chatbot by using Lambda to respond to the user interaction specified in the first section of this chatbot tutorial. To understand the flow diagram for the chatbot, you can observe this below.
-
+<img src="https://raw.githubusercontent.com/Ben74x/devfolio/master/content/blog/Image%20Recognition%20and%20Chatbot%20Website%20Using%20AWS/Screenshot%20from%202022-10-12%2012-59-40.png" alt=""> </br></br></br>
 
 
 
