@@ -345,8 +345,27 @@ This is just one way to use Rekognition. Next we will be embedding it into a web
 <h3 id="Amazon Cognito">Amazon Cognito</h3>
 Once you have finished testing the Rekognition demo. You can create an Amazon Cognito role for website integration. Amazon Cognito identity pools provide temporary AWS credentials for users who are guests (unauthenticated) and for users who have been authenticated and received a token. An identity pool is a store of user identity data specific to your account. Using identity pools, we will allow any users that access our website to utilise Amazon Rekognition and Amazon Lex.
 
-1. From the AWS Console, type Cognito and click on it.
-2. 
+
+1. From the AWS Console, type Cognito and click on it. </br></br>
+2. Click on `Manage Identity Pools`. </br></br>
+3. Click on `Create new identity pool`. </br></br>
+4. Add an `identity pool name`, tick the `Unauthenticated Identities` box and click `Create Pool`. <img src="https://raw.githubusercontent.com/Ben74x/devfolio/master/content/blog/Image%20Recognition%20and%20Chatbot%20Website%20Using%20AWS/Screenshot%20from%202022-10-12%2016-12-39.png" alt=""> </br></br></br>
+5.  Expand the `View Details` section, note down the role name for authenticated and unauthenticated identities. Click `Allow` when you're done. <img src="https://raw.githubusercontent.com/Ben74x/devfolio/master/content/blog/Image%20Recognition%20and%20Chatbot%20Website%20Using%20AWS/Screenshot%20from%202022-10-12%2016-13-52.png" alt=""> </br></br></br>
+6.  On the new page, note down the **Identity Pool ID**, you will need this in the next section. <img src="https://raw.githubusercontent.com/Ben74x/devfolio/master/content/blog/Image%20Recognition%20and%20Chatbot%20Website%20Using%20AWS/Screenshot%20from%202022-10-12%2016-14-29.png" alt=""> </br></br></br>
+7.  On the services dropdown on the top, expand and search for `IAM`. </br></br>
+8.  On the IAM page, click on `Roles` on the left hand side.
+9.  In the search bar, search for the unauthenticated role you noted down in Step 4 and click into it.
+10.  Click `Attach Policies` to attach new policies for this role. <img src="https://raw.githubusercontent.com/Ben74x/devfolio/master/content/blog/Image%20Recognition%20and%20Chatbot%20Website%20Using%20AWS/Screenshot%20from%202022-10-12%2016-16-09.png" alt=""> </br></br></br>
+11.  Search for the **AmazonLexRunBotsOnly** and select the box on the left hand side. </br></br>
+12.  Search for **AmazonRekognitionReadOnly** policy, select the box on the left hand side. </br></br>
+13.  Once all the policies are selected, click `Attach Policy` at the bottom. <img src="https://raw.githubusercontent.com/Ben74x/devfolio/master/content/blog/Image%20Recognition%20and%20Chatbot%20Website%20Using%20AWS/Screenshot%20from%202022-10-12%2016-17-24.png" alt=""> </br></br></br>
+14.  You should now see the policies attached to your role. <img src="https://raw.githubusercontent.com/Ben74x/devfolio/master/content/blog/Image%20Recognition%20and%20Chatbot%20Website%20Using%20AWS/Screenshot%20from%202022-10-12%2016-18-02.png" alt=""> </br>
+
+**This concludes the creation of Cognito Identities to use with the website**
+
+
+
+
 
 
 
