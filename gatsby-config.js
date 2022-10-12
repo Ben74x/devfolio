@@ -17,10 +17,10 @@ module.exports = {
     // Optional: List your projects, they must have `name` and `description`. `link` is optional.
     projects: [
       {
-        name: 'Devfolio',
+        name: 'VProfile',
         description:
-          'A zero-config and blazing fast personal site + blog built with GatsbyJs and TailwindCSS',
-        link: '',
+          'A fast automated web stack server stack built on Hashicorp Vagrant',
+        link: 'https://github.com/Ben74x/VProfile-Proj',
       },
       {
         name: 'Canteen Bot Services',
