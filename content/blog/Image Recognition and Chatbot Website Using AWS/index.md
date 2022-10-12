@@ -342,6 +342,12 @@ This is just one way to use Rekognition. Next we will be embedding it into a web
 
 
 
+<h3 id="Amazon Cognito">Amazon Cognito</h3>
+Once you have finished testing the Rekognition demo. You can create an Amazon Cognito role for website integration. Amazon Cognito identity pools provide temporary AWS credentials for users who are guests (unauthenticated) and for users who have been authenticated and received a token. An identity pool is a store of user identity data specific to your account. Using identity pools, we will allow any users that access our website to utilise Amazon Rekognition and Amazon Lex.
+
+1. From the AWS Console, type Cognito and click on it.
+2. 
+
 
 
 
