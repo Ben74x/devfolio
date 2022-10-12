@@ -53,7 +53,7 @@ In this project, the aim is to build out an AWS Lex Chatbot and Amazon Rekogniti
 
 
 Let's get started!!
-
+<h2 id="Building the chatbot">Building the chatbot</h2>
 ## Building the chatbot
 For this project you need to be able to access Amazon Cloudfront, Cloudformation, Cognito, Lambda, Lex, S3 and Rekogntion. I recommend having a code editor such as Visual Studio Code , to complete Amazon Rekogntion website integration and Amazon Lex website integration
 
