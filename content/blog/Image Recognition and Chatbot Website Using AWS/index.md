@@ -8,7 +8,7 @@ description: 'Using AWS AI/ML services to create a website that uses image recog
 
 
 Hello, Hola, Ciao, Bonjour, Hallo. Well well let's just say I was getting bored of using the same introduction in my blogs so I wanted to switch up a little :). In this blog we are going to utilize some of the AI/ML services in AWS. We are going to build a serveless website that uses image recognition and a chatbot system. AWS has services that can be used to create these with ease instead of taking time to train these ML models from scratch...Amazing right?
-I'm going to assume you know how to host static websites on S3. If you don't know how to do that, I have a blog on it and you can check it out. To do this project, you are not expected to have any background knowledge in the AI?ML services. Having a general understanding of Javascript will be perfect for the project. Now let's focus on the AI/ML services. AWS has services that support the developments of chatbot and image recognition systems. These services are **Amazon Lex** and **Amazon Rekognition**
+I'm going to assume you know how to host static websites on S3. If you don't know how to do that, I have a blog on it and you can check it out. To do this project, you are not expected to have any background knowledge in the AI/ML services. Having a general understanding of Javascript will be perfect for the project. Now let's focus on the AI/ML services. AWS has services that support the developments of chatbot and image recognition systems. These services are **Amazon Lex** and **Amazon Rekognition**
 
 **Amazon Lex** is a fully managed artificial intelligence (AI) service with advanced natural language models to design, build, test, and deploy conversational interfaces in applications.![product-page-diagram_Amazon-Lex 4227debf7110b1f16add010b55be881aa37fbd7b](https://user-images.githubusercontent.com/37503046/194777633-ea63dcd9-a879-42bf-a8ce-31298912d80b.png)
 
@@ -1046,10 +1046,10 @@ Set `Bucket Policy as Yes, update the bucket policy`. Allows the origin access i
 10. Set the `Default Root Object` as `main.html`. <img src="https://raw.githubusercontent.com/Ben74x/devfolio/master/content/blog/Image%20Recognition%20and%20Chatbot%20Website%20Using%20AWS/Screenshot%20from%202022-10-12%2021-39-57.png" alt=""> </br></br></br>
 11. Click `Create Distribution` on the bottom right to create your distribution and wait 10-15 minutes. </br></br>
 12. Click `Distributions` on the left hand side and go to your distribution Domain Name. Copy and paste that name to your web browser to see your website. Allow it to access your camera. </br></br>
-13. Try accessing the website on your phone and you should be able to use both cameras to undertake image recognition.</br><?br>
+13. Try accessing the website on your phone and you should be able to use both cameras to undertake image recognition.</br></br>
 
 **That sums everything up!!**
-Here is a summary of everything that we did:
+Here is a summary of everything we did:
 - Built a chatbot with basic interactions using **Amazon Lex console**
 - Used **Lambda** to respond to the user interactions
 - Explored the **Amazon Lex console** to add buttons to the responses of the question
@@ -1058,6 +1058,59 @@ Here is a summary of everything that we did:
 - Used a template to create a **Rekognition** demo on a live website
 - Used a template to add the chatbot into the live website
 - Hosted the website on **S3** using **Cloudfront CDN**
+
+</br>
+The project is complete. You can choose to maintain it but you must note that AWS will bill you on the services which are not free. If you wish to delete everything, you can follow the cleanup section
+</br></br>
+
+<h2 id="Cleanup">Cleanup</h2>
+
+<h3 id="Removing the Lex Chatbot">Removing the Lex Chatbot</h3>
+
+1. Navigate to the Amazon Lex console by searching for this service. </br></br>
+2. (If you have published your chatbot) Go to your chatbot, select settings and delete the alias. </br></br>
+3. Click on the blue arrow on the top left next to CanteenBot to go back to the main page. </br></br>
+4. Select your chatbot, click 'Actions' and 'Delete' to remove your chatbot. </br></br>
+5. Select the intents link on the left hand side, select the 'OrderDrink' intent and using the actions dropdown box, you can delete your intent. </br></br>
+6. Select the 'Slot types' link on the left hand side, select all the slot types you created (FlavourType, SizeType, DrinkType) and using the actions dropdown box, you can delete your slot types. </br></br>
+
+<h3 id="Removing Lambda Function">Removing Lambda Function</h3>
+
+1. Go to the Lambda console. </br></br>
+2. Select the 'CanteenBot' Lambda function, click on the 'Actions' button on the top right and click on 'Delete'. </br></br>
+
+<h3 id="Removing CloudFormation">Removing CloudFormation</h3>
+This is only applicable if you have created the website using CloudFormation in the Additional Features Section.
+
+1. Navigate to the CloudFormation console. </br></br>
+2. Select your CloudFormation stack and click 'Delete' on the top right. </br></br>
+
+<h3 id="Removing IAM Roles">Removing IAM Roles</h3>
+
+1. Navigate to the IAM console. </br></br>
+2. Select Roles on the left hand side. </br></br>
+3. Search for the roles that were created from your identity pool. </br></br>
+4. Select both roles and click Delete role </br></br>
+5. A popup will show once you click Delete role. Click on Yes, delete. </br></br>
+
+
+<h3 id="Removing Cognito">Removing Cognito</h3>
+1. Navigate to the Cognito console. </br></br>
+2. Select "Manage Identity Pools" </br></br>
+3. Click on the identity pool you created for this lab. </br></br>
+4. Select Edit identity pool on the top right. </br></br>
+5. Scroll to the bottom of the page, expand Delete identity pool and click Delete identity pool. </br></br>
+6. A popup will show once you click Delete identity pool so click on Delete pool. </br></br>
+
+
+<h3 id="Removing S3 Bucket">Removing S3 Bucket</h3>
+1. Navigate to the S3 console. </br></br>
+2. Search for your bucket at the top. </br></br>
+3. Select your bucket and click on Empty. </br></br>
+4. On the new page, type permanently delete and then click Empty. </br></br>
+5. Click Exit on the top right. </br></br>
+6. Select the bucket you want to delete and click Delete. </br></br>
+7. Type the name of your bucket and click Delete bucket. </br></br>
 
 
 
