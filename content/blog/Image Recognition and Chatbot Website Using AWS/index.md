@@ -270,7 +270,8 @@ You can undertake custom actions once the intent is triggered. This can be done 
     HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION
     OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE
     SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.*/
-``` </br></br>
+``` 
+</br></br>
 6. Click `Deploy` in the right-hand corner above the code console to save the code.</br></br>
 7. Click on `Services` on the top left corner and search for `Lex`. Click on `Amazon Lex` to go back to our previous Amazon Lex service.</br></br>
 8. Once you go back to Amazon Lex select your intent. Within the Fulfillment section of the page , select `AWS Lambda Function` and within the drop down choose `CanteenBot`. A popup should appear like the image below. Select `OK` to use the Lambda function. Version should be set to `Latest` by default. <img src="https://raw.githubusercontent.com/Ben74x/devfolio/master/content/blog/Image%20Recognition%20and%20Chatbot%20Website%20Using%20AWS/Screenshot%20from%202022-10-12%2012-44-06.png" alt=""> </br></br></br>
