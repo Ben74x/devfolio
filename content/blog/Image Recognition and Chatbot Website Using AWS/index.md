@@ -5,6 +5,12 @@ description: 'Using AWS AI/ML services to create a website that uses image recog
 ---
 <a name="top"></a>
 
+## Content
+- <a href="#Building the chatbot">Building the chatbot</a>
+- <a href="#Additional Features">Additional Features</a>
+- <a href="#Amazon Rekognition">Amazon Rekognition</a>
+- <a href="#Website Hosting">Website Hosting</a>
+- <a href="#Cleanup">Cleanup</a>
 
 
 Hello, Hola, Ciao, Bonjour, Hallo. Well well let's just say I was getting bored of using the same introduction in my blogs so I wanted to switch up a little :). In this blog we are going to utilize some of the AI/ML services in AWS. We are going to build a serveless website that uses image recognition and a chatbot system. AWS has services that can be used to create these with ease instead of taking time to train these ML models from scratch...Amazing right?
@@ -1113,6 +1119,12 @@ This is only applicable if you have created the website using CloudFormation in 
 7. Type the name of your bucket and click Delete bucket. </br></br>
 
 
+<h3 id="Removing CloudFront">Removing CloudFront</h3>
+1. Navigate to the CloudFront console. </br></br>
+2. Select the distribution you created based on the bucket you created prior and click Disable. </br></br>
+3. Click Yes, Disable for the popup and then click Close. This action will take around 15 minutes for CloudFront to fully disable the distribution. </br></br>
+4. Select your disabled distribution and click Delete </br></br>
+5. Click Yes, Delete for the popup and close the popup.</br></br>
 
 
 
@@ -1136,7 +1148,8 @@ This is only applicable if you have created the website using CloudFormation in 
 
 
 
-<a href="#top">Back to top of page</a>
+
+<a href="#top">Go to the top of the page</a>
 
 
 
