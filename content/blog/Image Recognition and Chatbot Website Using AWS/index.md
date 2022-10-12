@@ -309,7 +309,17 @@ In this section, we are going to add buttons to the responses of your questions 
 2. Type in `PublishCanteenBot` as the alias in the popup window and click Publish. </br></br>
 3. Publishing the chatbot will take a few seconds with the below popup appearing once published. Copy down the BotName and alias as you will use this at a later step. <img src="https://raw.githubusercontent.com/Ben74x/devfolio/master/content/blog/Image%20Recognition%20and%20Chatbot%20Website%20Using%20AWS/Screenshot%20from%202022-10-12%2014-24-43.png" alt=""> </br></br></br>
 4. Open another tab and go to the link <a href="https://github.com/aws-samples/aws-lex-web-ui">The AWS Samples github Lex Web UI page</a>. It is a github repo that contains stacks on Amazon Lex web interface quick setups. </br></br>
-5. Scroll down the page until you see the Getting Started section and click on deploy stack for the Northern Virginia (us-east-1) region (or the region you have been using in this workshop) as seen with the below screenshot.
+5. Scroll down the page until you see the Getting Started section and click on deploy stack for the Northern Virginia (us-east-1) region (or the region you have been using in this workshop) as seen with the below screenshot. <img src="https://raw.githubusercontent.com/Ben74x/devfolio/master/content/blog/Image%20Recognition%20and%20Chatbot%20Website%20Using%20AWS/Screenshot%20from%202022-10-12%2014-39-20.png" alt=""> </br></br></br>
+6. Set the Stack Name as `WebsiteChatbot`. <img src="https://raw.githubusercontent.com/Ben74x/devfolio/master/content/blog/Image%20Recognition%20and%20Chatbot%20Website%20Using%20AWS/Screenshot%20from%202022-10-12%2014-49-35.png" alt=""> </br></br></br>
+7. We created a V1 bot, so fill out the variables for **Lex V1 Lex V1 Bot Configuration Parameters**. Set the BotName and BotAlias to your own bot name and alias that you noted down prior. <img src="https://raw.githubusercontent.com/Ben74x/devfolio/master/content/blog/Image%20Recognition%20and%20Chatbot%20Website%20Using%20AWS/Screenshot%20from%202022-10-12%2014-50-03.png" alt=""> </br></br></br>
+8. Scroll down to **WebAppConfBotInitialText** to set the initial text that you want dispalyed on the website chatbot. Change the **WebAppConfBotInitialSpeech** to specify what you want the website to say if microphone is used. <img src="https://raw.githubusercontent.com/Ben74x/devfolio/master/content/blog/Image%20Recognition%20and%20Chatbot%20Website%20Using%20AWS/Screenshot%20from%202022-10-12%2014-50-59.png" alt=""> </br></br></br>
+9. Change the **WebAppConfToolbarTitle** to specify what you want the toolbar on the website to say. Such as 'Canteen Bot'. <img src="https://raw.githubusercontent.com/Ben74x/devfolio/master/content/blog/Image%20Recognition%20and%20Chatbot%20Website%20Using%20AWS/Screenshot%20from%202022-10-12%2014-51-29.png" alt=""> </br></br></br>
+10. Agree to the terms and conditions and click `Create Stack`. <img src="https://raw.githubusercontent.com/Ben74x/devfolio/master/content/blog/Image%20Recognition%20and%20Chatbot%20Website%20Using%20AWS/Screenshot%20from%202022-10-12%2014-52-05.png" alt=""> </br></br></br>
+
+
+
+
+9. 
 
 
 
