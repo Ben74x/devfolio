@@ -296,7 +296,6 @@ In this section, we are going to add buttons to the responses of your questions 
 
 **Note**
 
-
 Make sure to fill in the title, subtitle section, button title and button values. The image url section should be this url "". Copy it without the quotation marks. You can also use your own image but make sure it ends with an image format (.png, .jpeg)
 
 
