@@ -353,15 +353,389 @@ Once you have finished testing the Rekognition demo. You can create an Amazon Co
 5.  Expand the `View Details` section, note down the role name for authenticated and unauthenticated identities. Click `Allow` when you're done. <img src="https://raw.githubusercontent.com/Ben74x/devfolio/master/content/blog/Image%20Recognition%20and%20Chatbot%20Website%20Using%20AWS/Screenshot%20from%202022-10-12%2016-13-52.png" alt=""> </br></br></br>
 6.  On the new page, note down the **Identity Pool ID**, you will need this in the next section. <img src="https://raw.githubusercontent.com/Ben74x/devfolio/master/content/blog/Image%20Recognition%20and%20Chatbot%20Website%20Using%20AWS/Screenshot%20from%202022-10-12%2016-14-29.png" alt=""> </br></br></br>
 7.  On the services dropdown on the top, expand and search for `IAM`. </br></br>
-8.  On the IAM page, click on `Roles` on the left hand side.
-9.  In the search bar, search for the unauthenticated role you noted down in Step 4 and click into it.
+8.  On the IAM page, click on `Roles` on the left hand side. </br></br>
+9.  In the search bar, search for the unauthenticated role you noted down in Step 4 and click into it. </br></br>
 10.  Click `Attach Policies` to attach new policies for this role. <img src="https://raw.githubusercontent.com/Ben74x/devfolio/master/content/blog/Image%20Recognition%20and%20Chatbot%20Website%20Using%20AWS/Screenshot%20from%202022-10-12%2016-16-09.png" alt=""> </br></br></br>
 11.  Search for the **AmazonLexRunBotsOnly** and select the box on the left hand side. </br></br>
 12.  Search for **AmazonRekognitionReadOnly** policy, select the box on the left hand side. </br></br>
 13.  Once all the policies are selected, click `Attach Policy` at the bottom. <img src="https://raw.githubusercontent.com/Ben74x/devfolio/master/content/blog/Image%20Recognition%20and%20Chatbot%20Website%20Using%20AWS/Screenshot%20from%202022-10-12%2016-17-24.png" alt=""> </br></br></br>
 14.  You should now see the policies attached to your role. <img src="https://raw.githubusercontent.com/Ben74x/devfolio/master/content/blog/Image%20Recognition%20and%20Chatbot%20Website%20Using%20AWS/Screenshot%20from%202022-10-12%2016-18-02.png" alt=""> </br>
 
-**This concludes the creation of Cognito Identities to use with the website**
+**This concludes the creation of Cognito Identities to use with the website** </br></br>
+
+<h3 id="Rekognition Webite Integration">Rekognition Website Integration</h3>
+
+This part is where our code editor comes in. We'll create some files in the code editor that will be used to serve the Rekognition website.
+
+1. First open your code editor and create a file named `video.js` and `main.html` under the same directory. </br></br>
+2. Paste the following template inside `main.html`.
+```js
+<!DOCTYPE html>
+    <html>
+
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <script src="https://sdk.amazonaws.com/js/aws-sdk-2.41.0.min.js"></script>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+        <title>Amazon Rekognition and Lex Demo</title>
+    </head>
+
+    <body>
+        <nav class="navbar navbar-light" style="background-color: #161E2D;">
+            <span class="navbar-brand mb-0 h1 " href="#" style="color:#FFFFFF;">Amazon Rekognition and Lex Demo</span>
+        </nav>
+
+        <br><br>
+        <div class="container-fluid">
+            <div class="row">
+                <div id= "List" class="col-md-4 text-center">
+
+                    <!--Insert code from Step 10 into this section-->
+
+                </div>
+                <div id="Camera Window" class="col-md-4 text-center">
+
+                    <!--Insert code from Step 3 into this section-->
+
+                </div>
+                <div id="LexChatbot" class="col-md-4">
+
+                    <!--Insert code from Amazon Lex Website Integration Step 1 into this section>-->
+
+                </div>
+            </div>
+        </div>
+
+        <script src="video.js"></script>
+    </body>
+
+    </html>
+
+    <!--MIT No Attribution
+
+    Copyright 2021 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+    Permission is hereby granted, free of charge, to any person obtaining a copy of this
+    software and associated documentation files (the "Software"), to deal in the Software
+    without restriction, including without limitation the rights to use, copy, modify,
+    merge, publish, distribute, sublicense, and/or sell copies of the Software, and to
+    permit persons to whom the Software is furnished to do so.
+
+    THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED,
+    INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A
+    PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT
+    HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION
+    OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE
+    SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.-->
+```
+</br>
+This is a basic HTML file with the use of a Bootstrap framework to easily structure the webpage into 3 columns.
+</br>
+3. Copy the below code within the body section inside the `main.html` file. Copy the code between the `<div id="Camera Window" class="col-md-4 text-center">` tag. This snippet of code creates a video element that can capture the video. </br></br>
+```js
+<button type="button" id="switchButton" style="background-color:#FF9900; display:none; color:#000000" class="btn">Switch Camera</button>
+    <br><br>
+
+    <canvas class="img-fluid" id="canvas" width=320 height=240></canvas>
+    <video class="img-fluid" autoplay="true" id="videoElement"></video>
+
+    <br><br>
+
+    <button type="button" id="capture" style="background-color:#FF9900; color:#000000" class="btn">
+        <svg width="2em" height="2em" viewBox="0 0 16 16" class="bi bi-camera" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" d="M15 12V6a1 1 0 0 0-1-1h-1.172a3 3 0 0 1-2.12-.879l-.83-.828A1 1 0 0 0 9.173 3H6.828a1 1 0 0 0-.707.293l-.828.828A3 3 0 0 1 3.172 5H2a1 1 0 0 0-1 1v6a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1zM2 4a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2h-1.172a2 2 0 0 1-1.414-.586l-.828-.828A2 2 0 0 0 9.172 2H6.828a2 2 0 0 0-1.414.586l-.828.828A2 2 0 0 1 3.172 4H2z"/>
+            <path fill-rule="evenodd" d="M8 11a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5zm0 1a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7z"/>
+            <path d="M3 6.5a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0z"/>
+        </svg>
+            Capture
+        <span id="spinner" style="display: none" class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span> 
+    </button>
+        
+    <br><br>
+ ```
+ </br></br>
+ 4. We want to make sure that the image displays, to do this we want to add some code inside `video.js`. Copy the below code into your `video.js` file and save it.
+ ```js
+ //Controls the video element
+    var video = document.querySelector("#videoElement");
+    const canvas = document.getElementById('canvas');
+    const context = canvas.getContext('2d');
+    const switchButton = document.getElementById("switchButton")
+    const chatbotButton = document.getElementById("chatbotButton")
+    const spinnerIcon = document.getElementById("spinner")
+
+    //Flips the camera window
+    video.setAttribute("style", 'transform\:scaleX(-1);')
+    context.translate(320, 0);
+    context.scale(-1, 1);
+
+    //Creates the capture button
+    const captureButton = document.getElementById('capture');
+
+    // Hide the canvas
+    canvas.style.display="none";
+
+    //Used to detect the amount of cameras on the device accessing the page and add the switch button.
+    function gotDevices(mediaDevices) {
+        let count = 0;
+        mediaDevices.forEach(mediaDevice => {
+        if (mediaDevice.kind === 'videoinput') {
+            count++;
+        }
+        });
+        
+        if(count>1){
+            switchButton.style.display= "inline-block";
+        }
+    }
+
+    //Displays the switch camera button if there is more than 1 device.
+    navigator.mediaDevices.enumerateDevices().then(gotDevices);
+
+    //Defines default as the camera facing the user.
+    var videoConstraints = {
+        facingMode: 'user'
+    };
+
+    var constraints = {
+        video: videoConstraints,
+        audio: false
+    };
+
+    //Get Initial Camera Feed
+    getCameraFeed(constraints)
+
+    //Event when the switch button is clicked.
+    switchButton.addEventListener('click', event => {
+
+        if (videoConstraints.facingMode == 'user'){
+            video.setAttribute("style", 'transform\:scaleX(1);')
+            videoConstraints.facingMode = 'environment';
+        }else{
+            video.setAttribute("style", 'transform\:scaleX(-1);')
+            videoConstraints.facingMode = 'user';
+                
+        }
+
+        constraints = {
+            video: videoConstraints,
+            audio: false
+        };
+
+        getCameraFeed(constraints)
+
+    });
+
+    //Getting the camera stream.
+    function getCameraFeed(constraints){
+        //Gets the camera video
+        if (navigator.mediaDevices.getUserMedia) {
+            navigator.mediaDevices.getUserMedia(constraints)
+                .then(function (stream) {
+                video.srcObject = stream;
+                })
+                .catch(function (err0r) {
+                console.log("Something went wrong!");
+                });
+        }
+    }
+```
+</br>
+This code will initiate the camera window so you can capture images from your laptop camera.
+
+</br></br>
+5. Double click on your main.html file in your file director and you should see the screen below and when the browser asks for camera permissions, click **Allow**. You should now be able to see a screen with the capture button applied in the middle of the page.
+6. Let's change the background color for the webpage. Create a file called `style.css` and paste the below code inside.
+```js
+body {background-color: #232F3E;}
+
+    /*MIT No Attribution
+
+    Copyright 2021 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+
+    Permission is hereby granted, free of charge, to any person obtaining a copy of this
+    software and associated documentation files (the "Software"), to deal in the Software
+    without restriction, including without limitation the rights to use, copy, modify,
+    merge, publish, distribute, sublicense, and/or sell copies of the Software, and to
+    permit persons to whom the Software is furnished to do so.
+
+    THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED,
+    INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A
+    PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT
+    HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION
+    OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE
+    SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.*/
+```
+</br>
+This sets the background to a particular colour, you can change the hex colour code and experiment with background colors.
+</br>
+7. Add the below code snippet to the headsection within the `main.html` file. This ensures that your HTML file can have a reference to the style you defined within your css document.
+```js
+<link rel="stylesheet" href = "style.css">
+```
+</br></br>
+8. Your head section within your `main.html` file should look like the code snippet below.
+```js
+<head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <script src="https://sdk.amazonaws.com/js/aws-sdk-2.41.0.min.js"></script>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+        <link rel="stylesheet" href = "style.css">
+        <title>Amazon Rekognition and Lex Demo</title>
+    </head>
+```
+</br></br>
+9. Refresh your webpage and your background colour will have changed into the image below.
+10. We also want to identify the items found in the image. Copy and paste the below code within the body section of the `main.html` file after the `<div id= "List" class="col-md-4 text-center">` tag. Comments in the file will indicate the location. This code will show a list of item results once the Rekognition API is integrated.
+```js
+<div id="ImageResults">
+    <h2 id= "ElementsFoundHeading" style="color:#FFFFFF; visibility:hidden; align-content: left"> Image Elements Recognised</h2>
+        <ul class="list-unstyled"id="ResultsList" style="color:#FFFFFF">
+        </ul>
+    </div>
+```
+</br></br>
+11. Now we want to send the image bytes over to the Rekognition API to identify the objects in the image. To undertake this, copy and paste the function below to the bottom of the `video.js` file. Replace the identity pool id with the identity pool id you copied down in the previous section and the check that the region matches that of the one you are using.
+```js
+//Initialize the Amazon Cognito credentials provider
+    AWS.config.region = 'ap-southeast-2'; // Region
+    AWS.config.credentials = new AWS.CognitoIdentityCredentials({
+    // Provide your Pool Id here
+        IdentityPoolId: 'YOUR_IDENTITY_POOL_ID',
+    });
+        
+    //Used to convert image to bytes
+    function getBinary(base64Image) {
+        var binaryImg = atob(base64Image);
+        var length = binaryImg.length;
+        var ab = new ArrayBuffer(length);
+        var ua = new Uint8Array(ab);
+        for (var i = 0; i < length; i++) {
+            ua[i] = binaryImg.charCodeAt(i);
+        }
+
+        return ab;
+    }
+
+    //Initialises Rekognition.
+    var rekognition = new AWS.Rekognition();
+
+    //When the capture button is clicked, captures the image as bytes and sends to Rekognition to analyse the images.
+    captureButton.addEventListener('click', () => {
+        // Draw the video frame to the canvas.
+        spinnerIcon.style.display ="inline-block";
+        context.drawImage(video, 0, 0, canvas.width, canvas.height);
+        var img  = canvas.toDataURL("image/png");
+        var base64Image = img.replace(/^data\:image\/(png|jpeg|jpg);base64,/, '');
+        var imageBytes = getBinary(base64Image);
+
+        IdentifyObject(imageBytes)
+    });
+
+    //Calls the Rekognition API to recognise objects
+    function IdentifyObject(bytes){
+            var params = {
+                Image: { /* required */
+                    Bytes: bytes /* Strings will be Base-64 encoded on your behalf */,
+                },
+                    MaxLabels: 5,
+                    MinConfidence: 70
+            };
+
+            //DetectLabels API called to recognise the image bytes.
+            rekognition.detectLabels(params, function(err, data) {
+                    if (err) console.log(err, err.stack); // an error occurred
+                    else
+                        
+                    console.log(data); 
+
+                    pageList = document.getElementById("ResultsList")
+                    document.getElementById("ElementsFoundHeading").style.visibility = "visible";
+
+                    //Removes list on the left hand side.
+                    removeAllChildNodes(pageList)
+
+                    var executeSearch = 0;
+
+                    //Adds a list of items detected.
+                    for( var i = 0; i < data.Labels.length; i++){
+                        var element = document.createElement("LI");
+                        element.innerHTML = data.Labels[i].Name + " - " + (data.Labels[i].Confidence).toFixed(2) + "%";
+                        pageList.appendChild(element)
+
+                    }
+                    spinnerIcon.style.display = "none";
+                        
+            });
+    } 
+
+    //Clear list of images detected everytime there is a captured image
+    function removeAllChildNodes(parent) {
+        while (parent.firstChild) {
+            parent.removeChild(parent.firstChild);
+        }
+    }
+
+    /*MIT No Attribution
+
+    Copyright 2021 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+
+    Permission is hereby granted, free of charge, to any person obtaining a copy of this
+    software and associated documentation files (the "Software"), to deal in the Software
+    without restriction, including without limitation the rights to use, copy, modify,
+    merge, publish, distribute, sublicense, and/or sell copies of the Software, and to
+    permit persons to whom the Software is furnished to do so.
+
+    THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED,
+    INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A
+    PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT
+    HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION
+    OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE
+    SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.*/
+```
+</br></br>
+12. After adding all those components, save the file and refresh your web page. When you click capture, the Rekognition API would be used to identify the objects and you should see a list of objects on the left hand side like the below image. Additionally, a spinning icon should come up when capturing images.
+13. We can add some custom functionality such as Google searching any objects identified. Add the below code snippet inside `video.js` after `pageList.appendChild(element)`.
+```js
+//If labels are not face, person or human and it's the first time search is occurring, search for the detected object in Google.
+    if((data.Labels[i].Name !== "Face") && (data.Labels[i].Name !== "Person") && (data.Labels[i].Name !== "Human") && executeSearch == 0){
+        URL = "https://www.google.com/search?q=" + data.Labels[i].Name
+        window.open(URL, '_blank');
+        executeSearch = 1;
+    }    
+```
+</br></br>
+14. Your code should look like this for `video.js`.
+```js
+for(var i = 0; i < data.Labels.length; i++){
+        var element = document.createElement("LI");
+        element.innerHTML = data.Labels[i].Name + " - " + (data.Labels[i].Confidence).toFixed(2) + "%";
+        pageList.appendChild(element)
+        //If labels are not face, person or human and it's the first time search is occurring, search for the detected object in Google.
+        if((data.Labels[i].Name !== "Face") && (data.Labels[i].Name !== "Person") && (data.Labels[i].Name !== "Human") && executeSearch == 0){
+            URL = "https://www.google.com/search?q=" + data.Labels[i].Name
+            window.open(URL, '_blank');
+            executeSearch = 1;
+        }       
+    }
+```
+</br></br>
+15. Refresh your page and test out the image recognition website by taking a picture and see the google search occur for the item in the image. </br></br>
+16. Let's add some extra styles in the webpage. Add the below css inside your `style.css` file. This adds the borders and background colours for the video window.
+```js
+#videoElement {
+        width: 500px;
+        height: 375px;
+        background-color: #666;
+        border: 10px #FFFFFF solid;
+    }
+```
+</br></br>
+**This somes up how we use Amazon Rekognition within our website
+
+
+
 
 
 
