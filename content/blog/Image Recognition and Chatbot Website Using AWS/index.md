@@ -275,6 +275,11 @@ You can undertake custom actions once the intent is triggered. This can be done 
 6. Click `Deploy` in the right-hand corner above the code console to save the code.</br></br>
 7. Click on `Services` on the top left corner and search for `Lex`. Click on `Amazon Lex` to go back to our previous Amazon Lex service.</br></br>
 8. Once you go back to Amazon Lex select your intent. Within the Fulfillment section of the page , select `AWS Lambda Function` and within the drop down choose `CanteenBot`. A popup should appear like the image below. Select `OK` to use the Lambda function. Version should be set to `Latest` by default. <img src="https://raw.githubusercontent.com/Ben74x/devfolio/master/content/blog/Image%20Recognition%20and%20Chatbot%20Website%20Using%20AWS/Screenshot%20from%202022-10-12%2012-44-06.png" alt=""> </br></br></br>
+9. Click `Build` on the top right-hand corner so Amazon Lex registers the lambda function.</br></br>
+10. Test the bot by clicking the right hand side `Test Chatbot` toolbar to expand the chatbot window.</br></br>
+11. Type `I would like a small watermelon energy drink`. If successful, there should be a response of “Great! your {drink} will be available for pickup soon. Thanks for using CanteenBot!”.</br></br>
+
+
 
 
 
