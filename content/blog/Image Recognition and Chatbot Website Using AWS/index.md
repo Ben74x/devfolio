@@ -430,7 +430,7 @@ This part is where our code editor comes in. We'll create some files in the code
 ```
 </br>
 This is a basic HTML file with the use of a Bootstrap framework to easily structure the webpage into 3 columns.
-</br>
+</br></br>
 3. Copy the below code within the body section inside the `main.html` file. Copy the code between the `<div id="Camera Window" class="col-md-4 text-center">` tag. This snippet of code creates a video element that can capture the video. </br></br>
 ```js
 <button type="button" id="switchButton" style="background-color:#FF9900; display:none; color:#000000" class="btn">Switch Camera</button>
@@ -542,7 +542,6 @@ This is a basic HTML file with the use of a Bootstrap framework to easily struct
 ```
 </br>
 This code will initiate the camera window so you can capture images from your laptop camera.
-
 </br></br>
 5. Double click on your main.html file in your file director and you should see the screen below and when the browser asks for camera permissions, click **Allow**. You should now be able to see a screen with the capture button applied in the middle of the page.
 6. Let's change the background color for the webpage. Create a file called `style.css` and paste the below code inside.
@@ -568,7 +567,7 @@ body {background-color: #232F3E;}
 ```
 </br>
 This sets the background to a particular colour, you can change the hex colour code and experiment with background colors.
-</br>
+</br></br>
 7. Add the below code snippet to the headsection within the `main.html` file. This ensures that your HTML file can have a reference to the style you defined within your css document.
 ```js
 <link rel="stylesheet" href = "style.css">
