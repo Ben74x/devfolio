@@ -5,15 +5,15 @@ module.exports = {
     // Your Name
     name: 'Benjamin Dwumah',
     // Main Site Title
-    title: `Benjamin Dwumah | DevOps Engineer`,
+    title: `Benjamin Dwumah | PG`,
     // Description that goes under your name in main bio
-    description: `DevOps Engineer | Cloud Architect`,
+    description: `Software Engineer | DevOps Engineer | Cloud Architect`,
     // Optional: Github account URL
     github: `https://github.com/Ben74x`,
     // Optional: LinkedIn account URL
     linkedin: `https://www.linkedin.com/in/benjamin-dwumah74/`,
     // Content of the About Me section
-    about: `I'm a motivated DevOps Engineer with experience in automating, architecting and optimizing mission critical deployments over various infrastructure. I'm also passionate about AI, and I share my progress and thoughts through my github and blog. I love to chat about Python, DevOps & Cloud practices, Machine Learning and Anime. You can reach out to me on my LinkedIn.`,
+    about: `I'm a motivated Software/DevOps Engineer with experience in automating, architecting and optimizing mission critical deployments over various infrastructure. I'm also passionate about AI, and I share my progress and thoughts through my github and blog. I love to chat about Python, DevOps & Cloud practices, Machine Learning and Anime. You can reach out to me on my LinkedIn.`,
     // Optional: List your projects, they must have `name` and `description`. `link` is optional.
     projects: [
       {
