@@ -57,12 +57,12 @@ module.exports = {
       },
       {
         name: 'DevOps Tools',
-        description: 'Git, Vagrant, Bash Scripting, Linux, Docker, Elasticsearch, Grafana, Jenkins, Terraform, Kubernetes, Ansible',
+        description: 'Git, Vagrant, Bash Scripting, Linux, Docker, Elasticsearch, Grafana, Jenkins, Terraform, Kubernetes, Ansible, Chef, Puppet',
       },
       {
         name: 'Other',
         description:
-          'Amazon Web Services (AWS), Microservices, Infrastructure as Code, API design',
+          'Amazon Web Services (AWS), Microservices, Infrastructure as Code, API design, Agile Methodology',
       },
     ],
   },
