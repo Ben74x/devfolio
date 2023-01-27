@@ -24,8 +24,8 @@ Now that we have an understanding of what the project architecture might be like
 
 The app is an ecommerce application with multiple microservices. There are four services in total in the microservice app. To begin, **NGINX** serves as the **API gateway**, which is the front end from which all requests are received. This API gateway handles all communications between the other services. It listens for requests and routes them based on the headers in the URL. So, if a request is received on a **/**, that is, if you are simply accessing the URL, it is routed to the client microservice, which is written in **Angular**. This loads the website's frontend pages. The **Emart API**, written in **NodeJS**, is contacted for backend data, through the **/API**. The **NodeJs** service requires a database, and we use **MongoDB**, a NoSQL database, in this case. There is also another integration of another service, the **Books API**, which is written in **Java**. It makes use of the **MySQL** database, which is accessed via **/webapi**. The architecture can be seen below and the link to the project can be found <a href="https://github.com/Ben74x/emart-app">here.</a>
 
-![Screenshot from 2023-01-27 15-04-40](https://user-images.githubusercontent.com/37503046/215135977-8dc3c8c5-b58b-4551-bac4-d47da79db862.png)
 
+![Screenshot from 2023-01-27 16-18-16](https://user-images.githubusercontent.com/37503046/215137041-b213faae-fb20-45d0-b3e6-27a1275d804a.png)
 
 
 
