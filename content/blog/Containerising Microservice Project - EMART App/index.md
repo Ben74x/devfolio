@@ -9,6 +9,7 @@ description: 'Packaging a microservice app into a docker container for easy depl
 
 ## Content
 - <a href="#App Description">App Description</a>
+- <a href="#Implementation">Implementation</a>
 
 Hello and Happy New Year!! I know we are 2 weeks into the year but if I'm being honest, I still have my Christmas decorations up so I'm still in the new year mood. In this blog, we are going to cover containers. Yup! I know what you are thinking. The title is not different from what we're going to talk about. The blog will cover how to package a microservice app into a docker container for easy deployment. Now what is a microservice? I'm sure you might have an idea of what it is but if you don't, here is how I summarize what it is. Microservice is an architectural style that divides an application into a number of services that can be deployed separately, are loosely coupled, highly maintainable and testable. Large, sophisticated applications may be delivered quickly, often, and reliably thanks to the microservice design. It also enables an organization to evolve its technology stack.
 
@@ -29,8 +30,15 @@ The app is an ecommerce application with multiple microservices. There are four 
 
 
 
-<h2 id="Implementation">App Description</h2>
+<h2 id="Implementation">Implementation</h2>
 
+Okay so now we have a clear picture of the app and it's architecture. I will split the implementation into two parts. The first part will cover a summary of the dockerfiles and how the app is containerised. The second part will cover the deployment on EC2 instance. I decided to split it because the app is quiet big in size and the free tier instances are not going to get the job done quickly. You need fast and better instances which might cost money but if you can implement it within an hour, you should be safe from charges.
 
+Let's create a directory and clone the project on our machine from Github. 
 
+'''bash
+mkdir microsvcapp
+cd microsvcvapp/
+git clone https://github.com/Ben74x/emart-app.git
+'''
 
