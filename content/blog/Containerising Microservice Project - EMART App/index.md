@@ -42,3 +42,9 @@ cd microsvcvapp/
 git clone https://github.com/Ben74x/emart-app.git
 ```
 
+After cloning, confirm the app is in the microsvcapp directory by listing the files in the directory. Once you see it, open and run the last command to open the code directory in VScode.
+```bash
+ls
+cd emartapp/
+code .
+```
