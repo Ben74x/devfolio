@@ -18,7 +18,7 @@ Look at the image above, now imaging if that was an application. The application
 
 Docker is an open source virtualization technology that serves as a software container platform. These containers allow you to enclose an application, complete with its own filesystem, in a single, replicable package. Docker containers, which originated from open source collaboration, helped to revolutionise the world of software development. By encasing software in shells of code known as containers, which contain all of the resources the software requires to run on a server - tools, runtime, system libraries, and more - the software can perform consistently across multiple hosting platforms such as AWS, Google Cloud, Microsoft Azure, and Apache. 
 
-Now that we have an understanding of what the project architecture might be like... Let's dive into it.
+Now that we have an understanding of what the project architecture might be like... Let's dive into it. You will need to install **docker**, **VSCode**, and also have an **AWS** account. We will containerise and deploy the app on an **EC2** instance.
 
 <h2 id="App Description">App Description</h2>
 
@@ -27,6 +27,9 @@ The app is an ecommerce application with multiple microservices. There are four 
 
 ![Screenshot from 2023-01-27 16-18-16](https://user-images.githubusercontent.com/37503046/215137041-b213faae-fb20-45d0-b3e6-27a1275d804a.png)
 
+
+
+<h2 id="Implementation">App Description</h2>
 
 
 
