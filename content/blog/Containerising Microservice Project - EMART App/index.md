@@ -10,7 +10,7 @@ description: 'Packaging a microservice app into a docker container for easy depl
 ## Content
 - <a href="#App Description">App Description</a>
 - <a href="#Implementation">Implementation</a>
-- <a href="#Build and Run on EC2 instance">Build and Run on EC2 instance</a>
+- <a href="#Build and run on EC2 instance">Build and run on EC2 instance</a>
 
 Hello and Happy New Year!! I know we are 2 weeks into the year but if I'm being honest, I still have my Christmas decorations up so I'm still in the new year mood. In this blog, we are going to cover containers. Yup! I know what you are thinking. The title is not different from what we're going to talk about. The blog will cover how to package a microservice app into a docker container for easy deployment. Now what is a microservice? I'm sure you might have an idea of what it is but if you don't, here is how I summarize what it is. Microservice is an architectural style that divides an application into a number of services that can be deployed separately, are loosely coupled, highly maintainable and testable. Large, sophisticated applications may be delivered quickly, often, and reliably thanks to the microservice design. It also enables an organization to evolve its technology stack.
 
@@ -145,7 +145,7 @@ services:
 
 <br/><br/>
 
-<h2 id="Build and Run on EC2 instance">Build and Run on EC2 instance</h2>
+<h2 id="Build and run on EC2 instance">Build and run on EC2 instance</h2>
 We will take this docker-compose file from the project directory and use it to build and run the microservice app. We are going to build and run it on an EC2 instance so make sure you have an AWS account. Also, make sure you finish this part within an hour else it might cost you a few pennies on your account. Make sure to go through the process and understand every part before implementing it.
 <br/><br/><br/>
 
@@ -169,5 +169,39 @@ Key pair type: *RSA*
 
 Private key file format: *.pem*
 ![Screenshot from 2023-02-01 16-52-51](https://user-images.githubusercontent.com/37503046/216108977-b10ceb05-ae84-4ecb-a9a4-de1d9c8b4bcf.png)
+<br/><br/>
+5. Click Create security group and select *Allow SSH traffic from my ip*. Also select *Allow http traffic from the internet* so that we can access our nginx container which is the API gateway.
+![Screenshot from 2023-02-01 17-11-14](https://user-images.githubusercontent.com/37503046/216114050-a36f75ef-e909-4867-b61a-c0ec9c999d0c.png)
+<br/><br/>
+6. We will need a minimum of 15GB for our app so to be on the safe side, provision 25 GiB as the storage volume. 
+![Screenshot from 2023-02-01 17-15-41](https://user-images.githubusercontent.com/37503046/216115007-4b55a283-1c3b-4067-a6a5-6dfdd3a9a076.png)
+<br/><br/>
+7. Lastly, we will need docker engine on the instance and we need to add Ubuntu user in the docker group. We will write a script and put it in the *User data* section in the advance details. The script can be found below.
+```bash
+#!/bin/bash
 
+# Install docker on Ubuntu
+sudo apt-get update
+   sudo apt-get install \
+    ca-certificates \
+    curl \
+    gnupg \
+    lsb-release -y
+   curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo gpg --dearmor -o /usr/share/keyrings/docker-archive-keyring.gpg
+   echo \
+  "deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/docker-archive-keyring.gpg] https://download.docker.com/linux/ubuntu \
+  $(lsb_release -cs) stable" | sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
+
+# Install docker-compose
+   sudo apt-get update
+   sudo apt-get install docker-ce docker-ce-cli containerd.io -y
+   sudo curl -L "https://github.com/docker/compose/releases/download/1.29.2/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
+   sudo chmod +x /usr/local/bin/docker-compose
+
+# Add ubuntu user into docker group
+    sudo usermod -a -G docker ubuntu
+```
+<br/><br/>
+8. Click on launch instance.
+![Screenshot from 2023-02-01 17-28-04](https://user-images.githubusercontent.com/37503046/216117915-817c2553-ce10-483c-811f-f7045059a006.png)
 
