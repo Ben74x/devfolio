@@ -62,3 +62,10 @@ This is a multi-stage docker file. In the first stage, we pull the node image wi
 ![Screenshot from 2023-01-28 22-29-13](https://user-images.githubusercontent.com/37503046/215294054-e983f195-e805-466f-bb14-231a06942924.png)
 
 So the configuration file simply says if someone accesses the nginx container on / path, we show the content from the root and index directory. The index.html and index.htm files are loaded in the browser. So in the artifact we have the index.html file which is the nginx container presented to the user.
+
+
+Okay now let's jump to the NodeJs side. The DockerFile can be seen below.
+![Screenshot from 2023-02-01 11-41-51](https://user-images.githubusercontent.com/37503046/216033325-b6d7a00c-ff3f-45f9-97b0-7ae56fae6efc.png)
+
+This is also a multi-stage DockerFile and it is built again on Node. So we have this first stage where the artifact is built and the second stage where the artifact is used. Similar to the previous process work directory, we set up a new one and copy the source code from the current directory. All the source code will be copied into Node API directory instruction. We then go into that directory and run NPM install which is the build command. In the second stage, it runs on Node. Again, we set the work directory and we copy the artifact from nopeapi-build which is from the first image. We also run the ls command to list the files from the directory which you can see when you're building the dockerfile and also expose it on port 5000. Lastly we run the CMD command which goes into /usr/src/app/ directory and start the Node app. Okay so that's the second microservice dockerfile. Let's move to the next one. 
+
