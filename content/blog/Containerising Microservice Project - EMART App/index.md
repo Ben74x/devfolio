@@ -147,3 +147,13 @@ services:
 
 <h2 id="Build and Run on EC2 instance">Build and Run on EC2 instance</h2>
 We will take this docker-compose file from the project directory and use it to build and run the microservice app. We are going to build and run it on an EC2 instance so make sure you have an AWS account. Also, make sure you finish this part within an hour else it might cost you a few pennies on your account. Make sure to go through the process and understand every part before implementing it.
+
+1. Sign into your AWS console and search for EC2. Click it to go to the EC2 dashboard
+![Screenshot from 2023-02-01 16-31-43](https://user-images.githubusercontent.com/37503046/216104205-f39432bb-e3f7-429c-a25f-1deed91e7a88.png)
+<br/>
+2. Click on launch instance
+![Screenshot from 2023-02-01 16-36-06](https://user-images.githubusercontent.com/37503046/216105066-35aeac6e-16ff-497e-9aeb-8d303f021d0f.png)
+<br/>
+3. Name the instance *microsvcapp* and select the *ubuntu* AMI.
+![Screenshot from 2023-02-01 16-37-31](https://user-images.githubusercontent.com/37503046/216105864-b7f94e1f-3f09-4f2b-9a2b-1269c8919628.png)
+
