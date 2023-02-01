@@ -146,3 +146,4 @@ services:
 <br/><br/>
 
 <h2 id="Build and Run on EC2 instance">Build and Run on EC2 instance</h2>
+We will take this docker-compose file from the project directory and use it to build and run the microservice app. We are going to build and run it on an EC2 instance so make sure you have an AWS account. Also, make sure you finish this part within an hour else it might cost you a few pennies on your account. Make sure to go through the process and understand every part before implementing it.
