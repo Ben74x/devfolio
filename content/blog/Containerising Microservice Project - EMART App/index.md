@@ -177,8 +177,7 @@ Private key file format: *.pem*
 ![Screenshot from 2023-02-01 17-15-41](https://user-images.githubusercontent.com/37503046/216115007-4b55a283-1c3b-4067-a6a5-6dfdd3a9a076.png)
 <br/><br/>
 7. Lastly, we will need docker engine on the instance and we need to add Ubuntu user in the docker group. We will write a script and put it in the *User data* section in the advance details. The script can be found below.
-```bash
-
+```js
 #!/bin/bash
 
 # Install docker on Ubuntu
