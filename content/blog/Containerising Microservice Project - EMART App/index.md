@@ -74,4 +74,70 @@ The DockerFile of the javaapi side can be seen below.
 ![Screenshot from 2023-02-01 12-20-01](https://user-images.githubusercontent.com/37503046/216042063-7de94c6d-807e-4eba-a022-d959eaa6d4a6.png)
 
 
-Again, this is also multi-stage. In the first stage, we take an open JDK image because we need Maven. We set the work directory and run apt update && apt install maven -y, which installs maven. Then, we copy the source code to /usr/src/app directory and run the command mvn install, which build the artifact.In the second stage, we pull openjdk eight web directory and copy the artifact from the first image into the current directory with the name ./book-work-0.0.1.jar. Then we expose it on port 9000 and run the command to build the Java application.
+Again, this is also multi-stage. In the first stage, we take an open JDK image because we need Maven. We set the work directory and run apt update && apt install maven -y, which installs maven. Then, we copy the source code to /usr/src/app directory and run the command mvn install, which build the artifact. In the second stage, we pull openjdk8 from docker hub and copy the artifact from the first image into the current directory with the name ./book-work-0.0.1.jar. Then we expose it on port 9000 and run the command to build the Java application.
+
+
+The last bit is nginx as the api gateway. We are not going to build a separate container but rather use the official nginx image. We will attach the default.conf to the nginx official image. We don't need to build a separate nginx image because all we need is this configuration for the nginx service to load. Finally, we use Docker Compose to build all the docker files together. The Docker Compose file can be seen below.
+
+```js
+version: "3.8"
+services:
+    client:
+        build:
+            context: ./client
+        ports:
+            - "4200:4200"
+        container_name: client
+        depends_on:
+            [api, webapi]
+
+    api:
+        build:
+            context: ./nodeapi
+        ports:
+            - "5000:5000"
+        container_name: api
+        depends_on:
+            - nginx
+        depends_on:
+            [emongo]
+
+    webapi:
+        build:
+            context: ./javaapi
+        ports:
+            - "9000:9000"
+        restart: always
+        container_name: webapi
+        depends_on:
+            [emartdb]
+
+    nginx:
+        restart: always
+        image: nginx:latest
+        container_name: nginx
+        volumes:
+            - "./nginx/default.conf:/etc/nginx/conf.d/default.conf"
+        ports:
+            - "80:80"
+        command: ['nginx-debug', '-g', 'daemon off;']
+        depends_on:
+            [client]
+
+    emongo:
+       image: mongo:4
+       container_name: emongo
+       environment:
+         - MONGO_INITDB_DATABASE=epoc
+       ports:
+         - "27017:27017"
+    emartdb:
+      image: mysql:5.7
+      container_name: emartdb
+      ports:
+         - "3306:3306"
+      environment:
+        - MYSQL_ROOT_PASSWORD=emartdbpass     
+        - MYSQL_DATABASE=books
+```
+
