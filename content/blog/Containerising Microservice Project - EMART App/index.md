@@ -178,6 +178,7 @@ Private key file format: *.pem*
 <br/><br/>
 7. Lastly, we will need docker engine on the instance and we need to add Ubuntu user in the docker group. We will write a script and put it in the *User data* section in the advance details. The script can be found below.
 ```bash
+
 #!/bin/bash
 
 # Install docker on Ubuntu
@@ -200,6 +201,7 @@ sudo apt-get update
 
 # Add ubuntu user into docker group
     sudo usermod -a -G docker ubuntu
+
 ```
 <br/><br/>
 8. Click on launch instance.
