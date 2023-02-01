@@ -69,3 +69,9 @@ Okay now let's jump to the NodeJs side. The DockerFile can be seen below.
 
 This is also a multi-stage DockerFile and it is built again on Node. So we have this first stage where the artifact is built and the second stage where the artifact is used. Similar to the previous process work directory, we set up a new one and copy the source code from the current directory. All the source code will be copied into Node API directory instruction. We then go into that directory and run NPM install which is the build command. In the second stage, it runs on Node. Again, we set the work directory and we copy the artifact from nopeapi-build which is from the first image. We also run the ls command to list the files from the directory which you can see when you're building the dockerfile and also expose it on port 5000. Lastly we run the CMD command which goes into /usr/src/app/ directory and start the Node app. Okay so that's the second microservice dockerfile. Let's move to the next one. 
 
+
+The DockerFile of the javaapi side can be seen below.
+![Screenshot from 2023-02-01 12-20-01](https://user-images.githubusercontent.com/37503046/216042063-7de94c6d-807e-4eba-a022-d959eaa6d4a6.png)
+
+
+Again, this is also multi-stage. In the first stage, we take an open JDK image because we need Maven. We set the work directory and run apt update && apt install maven -y, which installs maven. Then, we copy the source code to /usr/src/app directory and run the command mvn install, which build the artifact.In the second stage, we pull openjdk eight web directory and copy the artifact from the first image into the current directory with the name ./book-work-0.0.1.jar. Then we expose it on port 9000 and run the command to build the Java application.
