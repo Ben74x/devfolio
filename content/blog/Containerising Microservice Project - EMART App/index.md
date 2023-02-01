@@ -164,7 +164,9 @@ We will take this docker-compose file from the project directory and use it to b
 4. Choose *t3.medium* as the instance type and create a new key pair with the following details: 
 
 Key pair name: *microsvc-key*
+
 Key pair type: *RSA*
+
 Private key file format: *.pem*
 ![Screenshot from 2023-02-01 16-52-51](https://user-images.githubusercontent.com/37503046/216108977-b10ceb05-ae84-4ecb-a9a4-de1d9c8b4bcf.png)
 
