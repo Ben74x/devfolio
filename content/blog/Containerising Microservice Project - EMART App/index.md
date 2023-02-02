@@ -218,12 +218,26 @@ sudo -s
 chmod 400 microsvc-key.pem
 ssh -i microsvc-key.pem ubuntu@ip   #ip is the copied public ip of the EC2 instance.
 ```
-<br/><br/>
+<br/>
 12. Confirm that docker is installed and ubuntu is added as a user to the docker group with these commands
 ```js
 docker --version
 docker-compose --version
 id
 ```
+<br/>
+13. Once everything is in order, we clone the app from github and run the docker-compose file to build it. Use the commands below to fetch the app and build it. Please note that this might take sometime so be patient
+```js
+git clone https://github.com/Ben74x/emart-app.git
+ls
+docker-compose build
+```
+<br/>
+14. Confirm that the build was successful by checking the images on the instance with this command.
+```js
+docker images
+```
+<br/>
+15. 
 
 
