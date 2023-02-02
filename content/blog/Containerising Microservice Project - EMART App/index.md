@@ -231,6 +231,7 @@ id
 
 ```js
 git clone https://github.com/Ben74x/emart-app.git
+cd emart-app/
 ls
 docker-compose build
 ```
@@ -248,5 +249,5 @@ docker-compose up   # First command
 
 docker-compose up -d # Second command
 ```
-
-
+<br/>
+16. Once the app is up and running, you can access it on your instance ip with port 80. Type your instance ip with port 80 (ip:80) in a web browser and it should look like the pic below.
