@@ -212,12 +212,18 @@ Private key file format: *.pem*
 ![Screenshot from 2023-02-02 10-54-29](https://user-images.githubusercontent.com/37503046/216307756-956498e7-accf-4b13-a6c7-2f94eb706925.png)
 <br/><br/>
 11. Open your bash terminal and run these commands to access the instance via terminal.
-```bash
+```js
 cd Downloads/
 sudo -s
-chmod 400 chmod 400 microsvc-key.pem
+chmod 400 microsvc-key.pem
 ssh -i microsvc-key.pem ubuntu@ip   #ip is the copied public ip of the EC2 instance.
 ```
-
+<br/><br/>
+12. Confirm that docker is installed and ubuntu is added as a user to the docker group with these commands
+```js
+docker --version
+docker-compose --version
+id
+```
 
 
