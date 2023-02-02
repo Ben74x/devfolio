@@ -241,6 +241,12 @@ docker-compose build
 docker images
 ```
 <br/>
-15. 
+15. Now to run the app we need to run the docker compose up command. We want to see how the app is built and run so we will not use the -d option. All the logs will be displayed on the terminal for you to see how the app is run. If you want to run in the background, use the second command instead.
+
+```js
+docker-compose up   # First command
+
+docker-compose up -d # Second command
+```
 
 
