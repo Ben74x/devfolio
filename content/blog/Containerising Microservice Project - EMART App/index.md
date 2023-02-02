@@ -234,6 +234,7 @@ docker-compose build
 ```
 <br/>
 14. Confirm that the build was successful by checking the images on the instance with this command.
+
 ```js
 docker images
 ```
