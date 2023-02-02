@@ -251,4 +251,5 @@ docker-compose up -d # Second command
 ```
 <br/>
 16. Once the app is up and running, you can access it on your instance ip with port 80. Type your instance ip with port 80 (ip:80) in a web browser and it should look like the pic below.
+
 ![Screenshot from 2023-02-02 11-40-53](https://user-images.githubusercontent.com/37503046/216316579-5be903fa-5efa-4670-8ec8-de3edc720114.png)
