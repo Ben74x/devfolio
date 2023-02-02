@@ -204,4 +204,20 @@ Private key file format: *.pem*
 <br/><br/>
 8. Click on launch instance.
 ![Screenshot from 2023-02-01 17-28-04](https://user-images.githubusercontent.com/37503046/216117915-817c2553-ce10-483c-811f-f7045059a006.png)
+<br/><br/>
+9. Once the instance is created, click on the instances tab to go the the EC2 instances dashboard
+![Screenshot from 2023-02-02 10-54-09](https://user-images.githubusercontent.com/37503046/216307509-adcb11dd-f348-4b6a-9072-fd3f009acba0.png)
+<br/><br/>
+10. Select the instance and copy the public ip address. We will use that to login to the instance via ssh.
+![Screenshot from 2023-02-02 10-54-29](https://user-images.githubusercontent.com/37503046/216307756-956498e7-accf-4b13-a6c7-2f94eb706925.png)
+<br/><br/>
+11. Open your bash terminal and run these commands to access the instance via terminal.
+```bash
+cd Downloads/
+sudo -s
+chmod 400 chmod 400 microsvc-key.pem
+ssh -i microsvc-key.pem ubuntu@ip   #ip is the copied public ip of the EC2 instance.
+```
+
+
 
