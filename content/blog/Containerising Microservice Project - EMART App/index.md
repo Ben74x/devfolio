@@ -256,3 +256,17 @@ docker-compose up -d # Second command
 <br/><br/>
 
 That sums up the project. Now, whenever a developer makes a code change, we can just pull the new changes from git and build the images again. The extraordinary thing about docker is that once an image is built, it is not going to build from scratch again. There are already image layers that are cached so only the changes will be built. Furthermore, it's always encouraged to make small changes a lot of times in microservice rather than making huge changes. The only disadvantage is that, for each change you have to build the image once again and run the container. All this can be automated by using *CI/CD* pipeline and you won't have to do a thing. That's the beauty of DevOps!
+
+<br/>
+
+<h2 id="Cleanup">Cleanup</h2>
+
+Congratulations if you've gotten this far. I told myself this once I saw the web app on my browser. It is good to always practice and develop your skills. Now let's clean up the services before AWS charges us. Follow the steps below to make sure everything is down.
+<br/>
+- Bring the container down by pressing *Ctrl + C*, if you run docker compose in the background, run the command: *docker-compose down*
+- Once the app is down, head to your EC2 instance dashboard
+- Click instance state and select terminate instance
+- Once the instance is terminated, click the EC2 dashboard in the top left corner
+- Select key pairs and delete the one you created
+- Go back to the EC2 dashboard
+- Select Security groups and delete the one you created. Becareful when deleting this security group because there is a default one there. Make sure you don't delete that one instead.
