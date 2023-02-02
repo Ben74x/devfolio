@@ -255,4 +255,4 @@ docker-compose up -d # Second command
 ![Screenshot from 2023-02-02 11-40-53](https://user-images.githubusercontent.com/37503046/216316579-5be903fa-5efa-4670-8ec8-de3edc720114.png)
 <br/><br/>
 
-That sums up the project. Now 
+That sums up the project. Now, whenever a developer makes a code change, we can just pull the new changes from git and build the images again. The extraordinary thing about docker is that once an image is built, it is not going to build from scratch again. There are already image layers that are cached so only the changes will be built. Furthermore, it's always encouraged to make small changes a lot of times in microservice rather than making huge changes. The only disadvantage is that, for each change you have to build the image once again and run the container. All this can be automated by using *CI/CD* pipeline and you won't have to do a thing. That's the beauty of DevOps!
