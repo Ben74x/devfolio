@@ -62,7 +62,7 @@ module.exports = {
       {
         name: 'Other',
         description:
-          'Amazon Web Services (AWS), Infrastructure as Code, Agile Methodology',
+          'Amazon Web Services (AWS), Infrastructure as Code, Agile, Scrum',
       },
     ],
   },
