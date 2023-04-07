@@ -3,66 +3,73 @@ module.exports = {
     // Site URL for when it goes live
     siteUrl: `https://peaceful-trifle-61538a.netlify.app/`,
     // Your Name
-    name: 'Benjamin Dwumah',
+    name: 'Ryan Fitzgerald',
     // Main Site Title
-    title: `Benjamin Dwumah | Data DevOps Engineer`,
+    title: `Ryan Fitzgerald | Full-Stack Developer`,
     // Description that goes under your name in main bio
-    description: `Big Data, AI & Cloud`,
+    description: `Lorem ipsum dolor sit amet consectetur adipisicing elit, ipsum.`,
+    // Optional: Twitter account handle
+    author: `@rfitzio`,
     // Optional: Github account URL
-    github: `https://github.com/Ben74x`,
+    github: `https://github.com/ryanfitzgerald`,
     // Optional: LinkedIn account URL
-    linkedin: `https://www.linkedin.com/in/benjamin-dwumah74/`,
+    linkedin: `https://www.linkedin.com/in/ryanafitzgerald/`,
     // Content of the About Me section
-    about: `I am a Big Data, AI, and Cloud Specialist with a proven track record of designing, implementing, and optimizing cutting-edge solutions for mission-critical projects across diverse infrastructure. I share my progress and thoughts through my github and blog. I love to chat about innovative cloud practices, big data, AI and Anime. You can reach out to me on my LinkedIn.`,
+    about: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus perferendis porro cumque ea error ab voluptatem. Temporibus adipisci exercitationem similique itaque quibusdam laudantium, qui molestiae quas, aut amet animi id.`,
     // Optional: List your projects, they must have `name` and `description`. `link` is optional.
     projects: [
       {
-        name: 'VProfile',
+        name: 'Devfolio',
         description:
-          'A fast automated web stack server built on HashiCorp Vagrant using IaC',
-        link: 'https://github.com/Ben74x/VProfile-Proj',
+          'A zero-config and blazing fast personal site + blog built with GatsbyJs and TailwindCSS',
+        link: 'https://github.com/RyanFitzgerald/devfolio',
       },
       {
-        name: 'Canteen Bot Services',
+        name: 'ChromeExtensionKit',
         description:
-          'A serverless website that uses image recognition and a chatbot to offer services on beverages - Built with AWS services',
-        link: 'https://bdwumah.dev/blog/Image%20Recognition%20and%20Chatbot%20Website%20Using%20AWS/',
+          'Kit to jump-start your Chrome extension projects with a variety of battle-tested starter templates',
+        link: 'https://chromeextensionkit.com/?ref=devfolio',
       },
       {
-        name: 'Image Captioning App',
+        name: 'Another Cool Project',
         description:
-          'An image caption generator built using deep learning to describe images',
-        link: 'https://github.com/Ben74x/Image-Captioning-on-MSCoco-Dataset',
+          'Lorem ipsum dolor sit amet consectetur adipisicing elit ducimus perferendis',
+        link: 'https://github.com/RyanFitzgerald/devfolio',
       },
     ],
     // Optional: List your experience, they must have `name` and `description`. `link` is optional.
     experience: [
       {
-        name: 'Npontu Technologies',
-        description: 'Cloud Support Engineer, September 2020 - August 2021',
-        link: '',
+        name: 'Acme Corp',
+        description: 'Full-Stack Developer, February 2020 - Present',
+        link: 'https://github.com/RyanFitzgerald/devfolio',
       },
       {
-        name: 'theSOFTtribe Ltd',
-        description: 'Web Developer Intern, June 2017 - August 2017',
-        link: '',
+        name: 'Globex Corp',
+        description: 'Full-Stack Developer, December 2017 - February 2020',
+        link: 'https://github.com/RyanFitzgerald/devfolio',
+      },
+      {
+        name: 'Hooli',
+        description: 'Full-Stack Developer, May 2015 - December 2017',
+        link: 'https://github.com/RyanFitzgerald/devfolio',
       },
     ],
     // Optional: List your skills, they must have `name` and `description`.
     skills: [
       {
-        name: 'Languages',
+        name: 'Languages & Frameworks',
         description:
-          'Python', 'Java', 'Scala',
+          'JavaScript (ES6+), Golang, Node.js, Express.js, React, Ruby on Rails, PHP',
       },
       {
-        name: 'Tools & Frameworks',
-        description: 'Git, Kafka, Hadoop, Linux, Docker, Elasticsearch, Grafana, Jenkins, Terraform, Kubernetes, Ansible, Chef, Puppet',
+        name: 'Databases',
+        description: 'MongoDB, PostreSQL, MySQL',
       },
       {
         name: 'Other',
         description:
-          'Amazon Web Services (AWS), Infrastructure as Code, Agile, Scrum',
+          'Docker, Amazon Web Services (AWS), CI / CD, Microservices, API design, Agile / Scrum',
       },
     ],
   },
