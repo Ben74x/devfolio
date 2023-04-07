@@ -1,7 +1,7 @@
 ---
 title: Mastering Cloud Data Management
 date: '2023-04-07T20:12:37.00Z'
-description: 'Effective DevOps Strategies for a Secure and Efficient Workflow'
+description: 'Effective devops strategies for a secure and efficient workflow'
 ---
 
 
