@@ -5,15 +5,15 @@ module.exports = {
     // Your Name
     name: 'Benjamin Dwumah',
     // Main Site Title
-    title: `Benjamin Dwumah | DevOps`,
+    title: `Benjamin Dwumah | Everything AI % Cloud`,
     // Description that goes under your name in main bio
-    description: `DevOps Engineer | Cloud Architect`,
+    description: `Big Data, AI & Cloud`,
     // Optional: Github account URL
     github: `https://github.com/Ben74x`,
     // Optional: LinkedIn account URL
     linkedin: `https://www.linkedin.com/in/benjamin-dwumah74/`,
     // Content of the About Me section
-    about: `I'm a motivated DevOps Engineer with experience in automating, architecting and optimizing mission critical deployments over various infrastructure. I'm also passionate about AI, and I share my progress and thoughts through my github and blog. I love to chat about Python, DevOps & Cloud practices, Machine Learning and Anime. You can reach out to me on my LinkedIn.`,
+    about: `I am a Big Data, AI, and Cloud Specialist with a proven track record of designing, implementing, and optimizing cutting-edge solutions for mission-critical projects across diverse infrastructure. I share my progress and thoughts through my github and blog. I love to chat about innovative cloud practices, big data, AI and Anime. You can reach out to me on my LinkedIn.`,
     // Optional: List your projects, they must have `name` and `description`. `link` is optional.
     projects: [
       {
@@ -53,11 +53,11 @@ module.exports = {
       {
         name: 'Languages',
         description:
-          'Python',
+          'Python', 'Java', 'Scala',
       },
       {
-        name: 'DevOps Tools',
-        description: 'Git, Vagrant, Bash Scripting, Linux, Docker, Elasticsearch, Grafana, Jenkins, Terraform, Kubernetes, Ansible, Chef, Puppet',
+        name: 'Tools & Frameworks',
+        description: 'Git, Kafka, Hadoop, Linux, Docker, Elasticsearch, Grafana, Jenkins, Terraform, Kubernetes, Ansible, Chef, Puppet',
       },
       {
         name: 'Other',
