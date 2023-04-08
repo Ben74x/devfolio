@@ -14,8 +14,8 @@ The rise of cloud computing has revolutionized the way businesses operate, store
 Data security is paramount when working with cloud infrastructure. To ensure your data is protected, take the following steps:
 
 - Use Encryption: Encrypt data both at rest and in transit. Leverage cloud provider's built-in encryption tools, or third-party encryption solutions for added security.
--Identity and Access Management (IAM): Implement strict access controls to limit access to sensitive data. Use role-based access control (RBAC) and enforce the principle of least privilege.
--Regular Security Audits: Perform regular security audits to identify vulnerabilities and ensure compliance with data security regulations.
+- Identity and Access Management (IAM): Implement strict access controls to limit access to sensitive data. Use role-based access control (RBAC) and enforce the principle of least privilege.
+- Regular Security Audits: Perform regular security audits to identify vulnerabilities and ensure compliance with data security regulations.
 
 
 
