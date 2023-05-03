@@ -7,7 +7,7 @@ module.exports = {
     // Main Site Title
     title: `Benjamin Dwumah | Data DevOps Engineer`,
     // Description that goes under your name in main bio
-    description: `Big Data, AI & Cloud`,
+    description: `Software Engineer - Big Data, AI & Cloud`,
     // Optional: Github account URL
     github: `https://github.com/Ben74x`,
     // Optional: LinkedIn account URL
