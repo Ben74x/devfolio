@@ -29,7 +29,7 @@ module.exports = {
         link: 'https://github.com/Ben74x/Image-Captioning-on-MSCoco-Dataset',
       },
       {
-        name: 'Dockerized E-Marketplace System',
+        name: 'Dockerised E-Marketplace System',
         description:
           'A microservice-based e-commerce system, seamlessly dockerized for streamlined deployment and scalability',
         link: 'https://bdwumah.dev/blog/Containerising%20Microservice%20Project%20-%20EMART%20App/',
