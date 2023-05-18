@@ -17,12 +17,6 @@ module.exports = {
     // Optional: List your projects, they must have `name` and `description`. `link` is optional.
     projects: [
       {
-        name: 'VProfile',
-        description:
-          'A fast automated web stack server built on HashiCorp Vagrant using IaC',
-        link: 'https://github.com/Ben74x/VProfile-Proj',
-      },
-      {
         name: 'Canteen Bot Services',
         description:
           'A serverless website that uses image recognition and a chatbot to offer services on beverages - Built with AWS services',
@@ -33,6 +27,12 @@ module.exports = {
         description:
           'An image caption generator built using deep learning to describe images',
         link: 'https://github.com/Ben74x/Image-Captioning-on-MSCoco-Dataset',
+      },
+      {
+        name: 'Dockerized E-Marketplace System',
+        description:
+          'A microservice-based e-commerce system, seamlessly dockerized for streamlined deployment and scalability',
+        link: 'https://bdwumah.dev/blog/Containerising%20Microservice%20Project%20-%20EMART%20App/',
       },
     ],
     // Optional: List your experience, they must have `name` and `description`. `link` is optional.
@@ -57,7 +57,7 @@ module.exports = {
       },
       {
         name: 'Tools & Frameworks',
-        description: 'Git, Kafka, Hadoop, Linux, Docker, Elasticsearch, Grafana, Jenkins, Terraform, Kubernetes, Ansible, Chef, Puppet',
+        description: 'Git, Kafka, SQL & NoSQL, Linux, Docker, Elasticsearch, Grafana, Jenkins, Terraform, Kubernetes, Ansible, Chef, Puppet',
       },
       {
         name: 'Other',
