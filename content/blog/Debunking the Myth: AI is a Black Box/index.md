@@ -6,7 +6,7 @@ description: 'AI: Friend, Not Foe! Cracking the Code on Artificial Intelligence'
 
 
 ## Debunking the Myth: AI is a Black Box
-Yo!, Agent 74 reporting for duty (though it's been a while since I wrote a piece). On my commute to work this morning, I couldn't help but snag a snippet of conversation about scary AI from a couple of millennials. Total black box vibes, you know? Don't judge my intel-gathering skills. I'm very good at eavesdropping if the convo is useful.
+Yo!  Agent 74 reporting for duty (though it's been a while since I wrote a piece). On my commute to work this morning, I couldn't help but snag a snippet of conversation about scary AI from a couple of millennials. Total black box vibes, you know? Don't judge my intel-gathering skills. I'm very good at eavesdropping if the convo is useful.
 
 
 AI has rapidly evolved, embedding itself into various facets of our daily lives. Despite its prevalence, a pervasive myth persists: AI is a "black box," an inscrutable entity whose inner workings are a mystery even to its creators. This notion can lead to distrust and skepticism, particularly as AI technologies become more integrated into critical areas like autonomous driving systems. However, this myth is increasingly being debunked through the exploration and implementation of AI, especially large language models (LLMs), in breakthrough applications.
