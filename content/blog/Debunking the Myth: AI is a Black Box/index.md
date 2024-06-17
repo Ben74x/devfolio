@@ -51,15 +51,15 @@ Autonomous driving is one of the most compelling applications of AI, showcasing 
 ### AI in Autonomous Vehicles
 Autonomous vehicles (AVs) rely on a combination of AI techniques, including computer vision, sensor fusion, and LLMs for natural language processing and decision-making. The complexity of these systems often fuels the black box myth. However, ongoing developments in this field highlight the strides made towards transparency.
 
-1. Sensor Data and Real-Time Processing: AVs use an array of sensors, including cameras, LIDAR, and radar, to perceive their environment. The data from these sensors are processed in real-time using AI algorithms. By visualizing this data, engineers can understand and interpret the AI's perception of the environment, making it clear how decisions are made.
+1. **Sensor Data and Real-Time Processing**: AVs use an array of sensors, including cameras, LIDAR, and radar, to perceive their environment. The data from these sensors are processed in real-time using AI algorithms. By visualizing this data, engineers can understand and interpret the AI's perception of the environment, making it clear how decisions are made.
 
 
 
-2. Simulation and Testing: Extensive simulation and real-world testing are fundamental to AV development. Companies like Waymo and Tesla publish detailed reports on their testing processes, incident analyses, and safety protocols. These reports provide insights into how AI systems are trained, validated, and improved over time.
+2. **Simulation and Testing**: Extensive simulation and real-world testing are fundamental to AV development. Companies like Waymo and Tesla publish detailed reports on their testing processes, incident analyses, and safety protocols. These reports provide insights into how AI systems are trained, validated, and improved over time.
 
 
 
-3. Regulatory Oversight and Standards: Governments and regulatory bodies are developing standards for transparency and accountability in AI-driven systems. These regulations ensure that AV manufacturers adhere to stringent safety and transparency requirements, further debunking the black box myth.
+3. **Regulatory Oversight and Standards**: Governments and regulatory bodies are developing standards for transparency and accountability in AI-driven systems. These regulations ensure that AV manufacturers adhere to stringent safety and transparency requirements, further debunking the black box myth.
 
 
 
