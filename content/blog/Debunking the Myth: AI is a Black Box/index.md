@@ -1,5 +1,5 @@
 ---
-title: Debunking the Myth: AI is a Black Box
+title: 'Debunking the Myth: AI is a Black Box'
 date: '2024-06-17T20:12:37.00Z'
 description: 'AI: Friend, Not Foe! Cracking the Code on Artificial Intelligence'
 ---
