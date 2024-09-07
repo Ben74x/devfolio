@@ -27,36 +27,36 @@ gRPC uses a `.proto` file (Protocol Buffer schema) to define services, outlining
 1. **Performance: gRPC vs REST vs GraphQL**
 gRPC offers significant performance advantages over REST and GraphQL for several reasons:
 
-- **Efficient Binary Serialization**: gRPC uses Protocol Buffers, which are compact and faster to serialize/deserialize compared to JSON. This leads to smaller payloads and less bandwidth usage, crucial in low-latency environments.
+  - **Efficient Binary Serialization**: gRPC uses Protocol Buffers, which are compact and faster to serialize/deserialize compared to JSON. This leads to smaller payloads and less bandwidth usage, crucial in low-latency environments.
 
-- **HTTP/2 for Transport**: Unlike REST's HTTP/1.1, gRPC takes advantage of HTTP/2, which allows:
+  - **HTTP/2 for Transport**: Unlike REST's HTTP/1.1, gRPC takes advantage of HTTP/2, which allows:
 
-    - **Multiplexing**: Multiple requests over the same connection, reducing the overhead of opening/closing connections.
-    - **Header Compression**: Compressed headers reduce the size of requests/responses.
-    - **Server Push**: The server can push resources to the client without an explicit request, reducing round-trip time.
+      - **Multiplexing**: Multiple requests over the same connection, reducing the overhead of opening/closing connections.
+      - **Header Compression**: Compressed headers reduce the size of requests/responses.
+      - **Server Push**: The server can push resources to the client without an explicit request, reducing round-trip time.
       
-- **Faster in High-Throughput Environments**: gRPC excels in high-throughput systems thanks to smaller payloads and binary data handling.
+  - **Faster in High-Throughput Environments**: gRPC excels in high-throughput systems thanks to smaller payloads and binary data handling.
 
 2. **Streaming Capabilities: gRPC's Real-Time Communication**
 gRPC supports native streaming, unlike REST and GraphQL, which are limited to request-response patterns.
 
-- **Unary RPC**: A single request and response (like REST/GraphQL).
-- **Server-Side Streaming**: The server sends a stream of responses to a single client request.
-- **Client-Side Streaming**: The client sends a stream of requests, with the server sending one response.
-- **Bidirectional Streaming**: Both client and server can send streams of messages over one connection, perfect for real-time applications like video conferencing or live chat.
+  - **Unary RPC**: A single request and response (like REST/GraphQL).
+  - **Server-Side Streaming**: The server sends a stream of responses to a single client request.
+  - **Client-Side Streaming**: The client sends a stream of requests, with the server sending one response.
+  - **Bidirectional Streaming**: Both client and server can send streams of messages over one connection, perfect for real-time applications like video conferencing or live chat.
 
 3. **Strict Contracts: Better API Definition and Versioning**
 gRPC enforces strict API contracts through Protocol Buffers, ensuring type safety and consistency between clients and servers. This approach prevents the data-fetching issues common in REST and GraphQL.
 
-- **Strict Contracts**: gRPC's `.proto` file ensures that both client and server are in sync about the API and data structure, reducing errors and over/under-fetching of data.
-- **Backward Compatibility**: Protocol Buffers allow you to evolve APIs without breaking existing clients, a challenge REST often faces.
+  - **Strict Contracts**: gRPC's `.proto` file ensures that both client and server are in sync about the API and data structure, reducing errors and over/under-fetching of data.
+  - **Backward Compatibility**: Protocol Buffers allow you to evolve APIs without breaking existing clients, a challenge REST often faces.
   
 4. **Optimized for Microservices Communication**
 gRPC is a natural fit for microservices, where efficient and reliable communication at scale is essential.
 
-- **Low Latency**: HTTP/2, binary serialization, and smaller payloads enable low-latency communication, ideal for microservices.
-- **Polyglot Environments**: gRPC generates client/server code in multiple languages, ensuring seamless communication between services built on different tech stacks.
-- **Built-In Load Balancing**: gRPC supports load balancing, retries, and deadlines, which are critical for scalable microservices systems.
+  - **Low Latency**: HTTP/2, binary serialization, and smaller payloads enable low-latency communication, ideal for microservices.
+  - **Polyglot Environments**: gRPC generates client/server code in multiple languages, ensuring seamless communication between services built on different tech stacks.
+  - **Built-In Load Balancing**: gRPC supports load balancing, retries, and deadlines, which are critical for scalable microservices systems.
 
   
 ## gRPC vs REST vs GraphQL: When to Use Each?
