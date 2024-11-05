@@ -38,6 +38,11 @@ module.exports = {
     // Optional: List your experience, they must have `name` and `description`. `link` is optional.
     experience: [
       {
+        name: 'TXODDS UK LTD',
+        description: 'Software Engineer, March 2023 - Present',
+        link: '',
+      },
+      {
         name: 'Npontu Technologies',
         description: 'Cloud Support Engineer, September 2020 - August 2021',
         link: '',
@@ -57,7 +62,7 @@ module.exports = {
       },
       {
         name: 'Tools & Frameworks',
-        description: 'Git, Kafka, SQL & NoSQL, Linux, Docker, Elasticsearch, Grafana, Jenkins, Terraform, Kubernetes, Ansible, Chef, Puppet',
+        description: 'Git, SQL & PostgreSQL, Django, Linux, Docker, Elasticsearch, Grafana, Jenkins, Docker, Kubernetes',
       },
       {
         name: 'Other',
