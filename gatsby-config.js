@@ -13,7 +13,7 @@ module.exports = {
     // Optional: LinkedIn account URL
     linkedin: `https://www.linkedin.com/in/benjamin-dwumah74`,
     // Content of the About Me section
-    about: `I'm a Software Engineer with a passion for designing scalable and high-performance distributed systems. With expertise in cloud-based solutions, data-driven development, and AI applications, I thrive in solving complex problems and delivering impactful software. My experience spans various industries, including sports data systems, cloud engineering, and big data. I share my projects and thoughts on GitHub and my blog, where I cover topics like cloud computing, AI, software engineering best practices, and occasionally, my love for anime. Feel free to connect with me on LinkedIn.`,
+    about: `I am a Software Engineer with a passion for designing scalable and high-performance distributed systems. With expertise in cloud-based solutions, data-driven development, and AI applications, I thrive in solving complex problems and delivering impactful software. My experience spans various industries, including sports data systems, cloud engineering, and big data. I share my projects and thoughts on GitHub and my blog, where I cover topics like cloud computing, AI, software engineering best practices, and occasionally, my love for anime. Feel free to connect with me on LinkedIn.`,
     // Optional: List your projects, they must have `name` and `description`. `link` is optional.
     projects: [
       {
