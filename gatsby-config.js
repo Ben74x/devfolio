@@ -39,7 +39,7 @@ module.exports = {
     experience: [
       {
         name: 'TXODDS UK LTD',
-        description: 'Software Engineer, March 2023 - Present',
+        description: 'Data Engineer, March 2023 - Present',
         link: '',
       },
       {
