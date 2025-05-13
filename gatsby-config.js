@@ -5,15 +5,15 @@ module.exports = {
     // Your Name
     name: 'Benjamin Dwumah',
     // Main Site Title
-    title: `Benjamin Dwumah | Software Engineer`,
+    title: `Benjamin Dwumah | Data Engineer`,
     // Description that goes under your name in main bio
-    description: `Software Engineer`,
+    description: `Data Engineer`,
     // Optional: Github account URL
     github: `https://github.com/Ben74x`,
     // Optional: LinkedIn account URL
     linkedin: `https://www.linkedin.com/in/benjamin-dwumah74`,
     // Content of the About Me section
-    about: `I am a Software Engineer with passion for designing scalable and high-performance distributed systems. With expertise in cloud-based solutions, data-driven development, and AI applications, I thrive in solving complex problems and delivering impactful software. My experience spans various industries, including sports data systems, cloud engineering, and big data. I share my projects and thoughts on GitHub and my blog, where I cover topics like cloud computing, AI, software engineering best practices, and occasionally, my love for anime. Feel free to connect with me on LinkedIn.`,
+    about: `I'm a Data & Backend Engineer passionate about building scalable, high-performance distributed systems. I specialise in real-time data processing, cloud infrastructure, and streaming architecture using tools like Python, Java, AWS, PostgreSQL, and gRPC. My experience spans sports data platforms, cloud automation, and big data pipelines solving complex engineering problems in regulated and high-throughput environments. I’m especially drawn to the intersection of data infrastructure and meaningful product impact. I share projects and insights on GitHub and my blog, where I write about cloud computing, AI, backend architecture. Feel free to connect with me on LinkedIn.`,
     // Optional: List your projects, they must have `name` and `description`. `link` is optional.
     projects: [
       {
@@ -58,7 +58,7 @@ module.exports = {
       {
         name: 'Languages',
         description:
-          'Python, Java, Scala',
+          'Python, Java',
       },
       {
         name: 'Tools & Frameworks',
