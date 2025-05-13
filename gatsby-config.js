@@ -62,7 +62,7 @@ module.exports = {
       },
       {
         name: 'Tools & Frameworks',
-        description: 'Git, SQL & PostgreSQL, Django, Linux, Docker, Elasticsearch, Grafana, Jenkins, Docker, Kubernetes',
+        description: 'Git, SQL & PostgreSQL, Django, Linux, Docker, Hadoop, Elasticsearch, Grafana, Jenkins, Docker, Kubernetes',
       },
       {
         name: 'Other',
