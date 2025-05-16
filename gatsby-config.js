@@ -5,9 +5,9 @@ module.exports = {
     // Your Name
     name: 'Benjamin Dwumah',
     // Main Site Title
-    title: `Benjamin Dwumah | Data Engineer`,
+    title: `Benjamin Dwumah | Software Engineer`,
     // Description that goes under your name in main bio
-    description: `Data Engineer`,
+    description: `Software Engineer - Big Data & AI`,
     // Optional: Github account URL
     github: `https://github.com/Ben74x`,
     // Optional: LinkedIn account URL
@@ -39,7 +39,7 @@ module.exports = {
     experience: [
       {
         name: 'TXODDS UK LTD',
-        description: 'Data Engineer, March 2023 - Present',
+        description: 'Software Engineer, March 2023 - Present',
         link: '',
       },
       {
