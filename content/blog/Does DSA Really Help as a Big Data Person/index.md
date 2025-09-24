@@ -16,8 +16,6 @@ There is this widespread myth that goes, “DSA is just for competitive programm
 
 DSA isn't some academic hoop to jump through. It is the invisible foundation of every single big data system. When you understand DSA, you don't just use Spark or Kafka, you know why they work, where they break, and how to fix them.
 
-## Where DSA Hides in Your Big Data Stack
-
 Let's peel back the curtain and look at how DSA secretly powers the tools you use every day.
 
 ### Hash Tables: The Unsung Hero of Spark
@@ -72,3 +70,4 @@ The real magic happens months and years later, when you're not coding up textboo
 This is where DSA pays dividends that have nothing to do with coding interviews. It rewires how your brain approaches problems. You start seeing patterns everywhere: that messy data pipeline is really just a graph with cycles that need breaking. That slow database query? It's screaming for the right data structure to optimise lookups. That complex business logic? Probably a state machine in disguise.
 The developers who advance fastest in their careers aren't necessarily the ones who memorised the most leetcode solutions. They're the ones who developed that fundamental problem-solving intuition which is the ability to look at a messy, real-world challenge and instinctively know which algorithmic approach might tame it.
 It's like learning to see the underlying mathematical beauty in chaotic business problems. And once you develop that lens, you become the person people come to when things get complex and messy because you don't just write code, you solve problems.
+
