@@ -13,7 +13,7 @@ module.exports = {
     // Optional: LinkedIn account URL
     linkedin: `https://www.linkedin.com/in/benjamin-dwumah74`,
     // Content of the About Me section
-    about: `I'm a Data & Backend Engineer passionate about building scalable, high-performance distributed systems. I specialise in real-time data processing, cloud infrastructure, and streaming architecture using tools like Python, Java, AWS, PostgreSQL, and gRPC. My experience spans sports data platforms, cloud automation, and big data pipelines solving complex engineering problems in regulated and high-throughput environments. I’m especially drawn to the intersection of data infrastructure and meaningful product impact. I share projects and insights on GitHub and my blog, where I write about cloud computing, AI, backend architecture. Feel free to connect with me on LinkedIn.`,
+    about: `I'm a Data & Backend Engineer passionate about building scalable, high-performance distributed systems. I specialise in real-time data processing, database & cloud infrastructure, and streaming architecture using tools like Python, Scala, AWS, PostgreSQL, and gRPC. My experience spans sports data platforms, cloud automation, and big data pipelines solving complex engineering problems in regulated and high-throughput environments. I’m especially drawn to the intersection of data infrastructure and meaningful product impact. I share projects and insights on GitHub and my blog, where I write about cloud computing, AI, backend architecture. Feel free to connect with me on LinkedIn.`,
     // Optional: List your projects, they must have `name` and `description`. `link` is optional.
     projects: [
       {
@@ -58,16 +58,16 @@ module.exports = {
       {
         name: 'Languages',
         description:
-          'Python, Java',
+          'Python, Scala',
       },
       {
         name: 'Tools & Frameworks',
-        description: 'Git, SQL & PostgreSQL, Django, Linux, Docker, Hadoop, Elasticsearch, Grafana, Jenkins, Docker, Kubernetes',
+        description: 'Git, SQL, PostgreSQL, MongoDB, Redis, REST APIs, SBT, Airflow, Kafka, Flink, Snowflake, Elasticsearch, Grafana, Jenkins, Docker, Kubernetes',
       },
       {
         name: 'Other',
         description:
-          'Amazon Web Services (AWS), Infrastructure as Code, Agile, Scrum',
+          'Amazon Web Services (AWS), Terraform, CI/CD (Jenkins)',
       },
     ],
   },
